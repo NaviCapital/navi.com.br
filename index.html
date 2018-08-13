@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Navi Capital</title>
+
+    <link rel="shortcut icon" href="navi48.ico">
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link rel="stylesheet" type="text/css" href="MyFontsWebfontsKit.css">
+    <script>
+    var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+    showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    if (n > x.length) {slideIndex = 1} 
+    if (n < 1) {slideIndex = x.length} ;
+    for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none"; 
+    }
+    x[slideIndex-1].style.display = "block"; 
+}
+    </script>
+  </head>
+
+  <body>
+    <div class="container">
+      <br>
+      <br>
+      <div class="row">
+          <div class="col-lg-3 col-12">            
+            <a href="">
+              <img id="logo" src="img/logo-salmao-pequeno.png" alt="Navi Capital" style="border-style:none;"></img>
+            </a>
+          </div>
+          <div class="col-lg-9 col-12">            
+            <ul id="menu" class="nav nav-pills justify-content-end">
+            <li class="nav-item">
+              <a class="nav-link colorPurple active" id="tab-home" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link colorPurple" id="tab-equipe" data-toggle="tab" href="#equipe" role="tab" aria-controls="home" aria-selected="true">Equipe</a>
+              </li>      
+            <li class="nav-item dropdown"> 
+              <a class="nav-link colorPurple dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Nossos Produtos</a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" id="tab-fundo-ls" data-toggle="tab" href="#fundo-ls" role="tab" aria-controls="fundo-ls" aria-selected="false">Long Short</a>
+                <a class="dropdown-item" id="tab-fundo-lb" data-toggle="tab" href="#fundo-lb" role="tab" aria-controls="fundo-lb" aria-selected="false">Long Biased</a>
+                <a class="dropdown-item" id="tab-fundo-lo" data-toggle="tab" href="#fundo-lo" role="tab" aria-controls="fundo-lo" aria-selected="false">Long Only</a>
+              </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link colorPurple" id="tab-downloads" data-toggle="tab" href="#downloads" role="tab" aria-controls="downloads" aria-selected="false">Documentos</a>
+              </li>      
+            <li class="nav-item">
+              <a class="nav-link colorPurple" id="tab-contato" data-toggle="tab" href="#contato" role="tab" aria-controls="contato" aria-selected="false">Precisa Falar?</a>
+            </li>
+            </ul>
+          </div>          
+      </div>
+      <br>
+    </div>
+
+    <div class="">
+      <div class="tab-content" id="my-tab-content">
+        
+<!--
+██   ██  ██████  ███    ███ ███████
+██   ██ ██    ██ ████  ████ ██
+███████ ██    ██ ██ ████ ██ █████
+██   ██ ██    ██ ██  ██  ██ ██
+██   ██  ██████  ██      ██ ███████
+-->
+
+        <div role="tabpanel" class="tab-pane fade show active pad-top-15" id="home" aria-labelledby="tab-home">      
+
+            <!--div id="carouselExampleIndicators" class="carousel slide " data-ride="carousel">
+                <ol class="carousel-indicators">
+                  <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img class="d-block w-100" src="img/team.png" alt="First slide">
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="img/team2.png" alt="Second slide">
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="img/team2.png" alt="Third slide">  
+                  </div>
+                </div>
+              
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+            </div-->
+            <div class="">
+                <img class="d-block w-100" src="img/team2lean.jpg" alt="First slide">
+            </div>
+
+              <div class="container">
+          <div class="row pad-top-15">
+            <div class="col-12">
+              <p class="text-justify">
+                  <h3>Navi Capital, sua gestora de recursos, nosso investimento</h3>
+              </p>
+
+              <p  class="text-justify">
+                  Nascemos em 2018, fruto de uma gestação de 9 anos como equipe na Kondor Invest. Temos objetivos excepcionais e queremos fazer parte da sua jornada financeira. Navegamos da forma mais segura possível pelos desafios do mercado de ações brasileiro, seguindo um processo de investimento diferenciado.
+              </p>
+
+              <p  class="text-justify">                  
+                  Na Navi, estudar é um vício e um prazer que viraram negócio. Temos fome de conhecimento e já acordamos com as notícias na mão. O mercado não para de mudar e a gente não para de estudar. Estamos sempre revendo nosso olhar e melhorando nosso saber. No dia seguinte, acordamos para estudar mais.
+              </p>
+
+              <p  class="text-justify">                  
+                  A Navi é um laboratório de ideias. A gente tem um único objetivo: preservar e potencializar o seu (e o nosso) capital com o máximo de acerto. Mas o nosso jeito de gerar resultados é plural, estamos sempre em busca de novas e melhores respostas. Cada desafio é uma oportunidade de colocar nossas mentes para criar em conjunto. Vivemos um verdadeiro darwinismo de ideias: dissecamos hipóteses até que vença a mais forte.
+              </p>
+
+              <p  class="text-justify">                  
+                Venha conhecer o jeito da Navi de investir.
+              </p>                                              
+
+            </div>
+          </div>
+        </div>
+      </div>
+        
+        
+<!--
+ ██████  ██████  ███    ██ ████████  █████  ████████  ██████
+PRODUTOS
+ ██████  ██████  ███    ██ ████████  █████  ████████  ██████
+ ██████  ██████  ███    ██ ████████  █████  ████████  ██████
+ ██████  ██████  ███    ██ ████████  █████  ████████  ██████
+-->
+
+        <div role="tabpanel" class="tab-pane fade pad-top-15" id="fundo-ls" aria-labelledby="tab-fundo-ls">
+            <div class="container">
+              <br>
+            <h3>Kondor Long Short FIM (em breve NAVI Long Short FIM)</h3>
+            <br>
+          <div class="row">
+
+            <div class="col-lg-9 col-12">
+                <table class="table table-bordered">
+                    <thead>
+                      <tr class="kyrialBold table-text">
+                          <th>Rentabilidade</th>
+                          <th>12 Meses</th>
+                          <th>24 Meses</th>
+                          <th>36 Meses</th>
+                          <th>Desde o Início</th>                          
+                          <th>PL</th>
+                      </tr>
+                    </thead>
+            
+                    <tbody>
+                      <tr class="kyrialBold table-text">
+                          <td>Fundo</td>
+                          <td>16,08%</td>
+                          <td>29,48%</td>
+                          <td>54,37%</td>
+                          <td>167,93%</td>
+                          <td>R$ 472.933.936</td>
+                      </tr>
+                      <tr class="colorText table-text">
+                          <td>CDI</td>
+                          <td>7,09%</td>
+                          <td>20,51%</td>
+                          <td>37,39%</td>
+                          <td>118,81%</td>
+                          <td>-</td>
+                      </tr>
+                    </tbody>
+                  </table>
+<br>             
+<p class="text-center">
+    <img src="img/graficoLS.png"></img>
+  </p>
+<br>              
+            <p class="small-text">                
+              Dados de 31/07/2018 e início do fundo em 29/09/2010.
+            </p>              
+               <!--p  class="text-justify">
+                O objetivo desse fundo é  realizar operações de ativos e derivativos ligados ao mercado de renda
+                variável, montando posições compradas e vendidas. O resultado do fundo será proveniente, preponderantemente, da diferença entre essas posições.
+              </p-->
+            </div>
+            <div class="col-lg-3 col-12">
+              <p class="small-text">
+                <b>Público Alvo:</b> Investidores em geral.
+                <br>
+                <b>Aplicação:</b> D+0 até às 14h.
+                <br>
+                <b>Resgate (Cotização):</b> D+30 (corridos).
+                <br>
+                <b>Resgate (Pagamento):</b> 3º dia útil após cotização.
+                <br>
+                <b>Aplicação Inicial:</b> R$ 50.000,00
+                <br>
+                <b>Movimentação Mínima:</b> R$ 10.000,00
+                <br>
+                <b>Taxa de Administração:</b> 2% a.a. (pago mensalmente)
+                <br>
+                <b>Taxa de Performance:</b> 20% do que exceder 100% do CDI, com <i>high water mark</i>. (pago semestralmente)
+                <br>
+                <b>Administração:</b> BEM DTVM
+                <br>
+                <b>Custódia:</b> Banco Bradesco
+                <br>
+                <b>Auditoria:</b> KPMG.
+                <br>
+                <b>Categoria ANBIMA:</b> Long and Short - Direcional
+                <br>
+                <b>Tributação:</b> O fundo perseguirá o tratamento tributário de longo prazo. IR Fonte decrescente. IOF em caso de resgate até o 29º dia após aplicação.
+              </p>
+              <p>
+                <img src="img/pdf-icon.png" class="pdf-icon"></img>
+                <span><a href="files/Relatorio_LS.pdf" target="_blank">Relatório</a></span>
+              </p>
+              <p>
+                <img src="img/pdf-icon.png" class="pdf-icon"></img>
+                <span><a href="files/Regulamento_LS.pdf" target="_blank">Regulamento</a></span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+        <div role="tabpanel" class="tab-pane fade pad-top-15" id="fundo-lo" aria-labelledby="tab-fundo-lo">
+            <div class="container">
+              <br>
+            <h3>Kondor Equities Institucional FIA (em breve Navi Institucional FIA)</h3>
+            <br>
+          <div class="row">
+
+            <div class="col-lg-9 col-12">
+                <table class="table table-bordered">
+                    <thead>
+                      <tr class="kyrialBold table-text">
+                          <th>Rentabilidade</th>
+                          <th>12 Meses</th>
+                          <th>24 Meses</th>
+                          <th>36 Meses</th>
+                          <th>Desde o Início</th>                          
+                          <th>PL</th>
+                      </tr>
+                    </thead>
+            
+                    <tbody>
+                      <tr class="kyrialBold table-text">
+                          <td>Fundo</td>
+                          <td>37,55%</td>
+                          <td>59,10%</td>
+                          <td>101,35%</td>
+                          <td>124,57%</td>
+                          <td>R$ 398.701.856</td>
+                      </tr>
+                      <tr class="colorText table-text">
+                          <td>Ibovespa</td>
+                          <td>20,18%</td>
+                          <td>38,24%</td>
+                          <td>55,75%</td>
+                          <td>51,40%</td>
+                          <td>-</td>
+                      </tr>
+                    </tbody>
+                  </table>
+<br>             
+<p class="text-center">
+    <img src="img/graficoLO.png"></img>
+  </p>
+<br>              
+            <p class="small-text">                
+              Dados de 31/07/2018 e início do fundo em 30/09/2011.
+            </p>
+               <!--p  class="text-justify">
+                  O objetivo desse fundo é proporcionar aos seus cotistas rentabilidade por meio das oportunidades oferecidas pelo mercado de renda variável, porém o FUNDO poderá aproveitar oportunidades através de investimentos em outras classes de ativos financeiros disponíveis nos mercados de renda fixa, cambial, derivativos e cotas de fundos de investimento, negociados no mercado interno, respeitando os limites estabelecidos no regulamento. O principal fator de risco do FUNDO é a variação de preços de ações admitidas à negociação no mercado à vista de bolsa de valores ou entidade do mercado de balcão organizado.
+              </p-->
+
+            </div>
+            <div class="col-lg-3 col-12">
+              <p class="small-text">
+                <b>Público Alvo:</b> Investidores em geral, inclusive
+                companhias seguradoras, sociedades de capitalização,
+                entidades abertas e fechadas de previdência complementar
+                e regimes próprios de previdência social.
+                <br>
+                <b>Aplicação:</b> D+0 até às 14h.
+                <br>
+                <b>Resgate (Cotização):</b> D+30 (corridos).
+                <br>
+                <b>Resgate (Pagamento):</b> 3º dia útil após cotização.
+                <br>
+                <b>Aplicação Inicial:</b> R$ 10.000,00
+                <br>
+                <b>Movimentação Mínima:</b> R$ 5.000,00
+                <br>
+                <b>Taxa de Administração:</b> 1,5% a.a. (pago mensalmente)
+                <br>
+                <b>Taxa de Performance:</b> 20% do que exceder 100% do Índice BOVESPA, com <i>high water mark</i>. (pago semestralmente)
+                <br>
+                <b>Administração:</b> BEM DTVM
+                <br>
+                <b>Custódia:</b> Banco Bradesco
+                <br>
+                <b>Auditoria:</b> KPMG.
+                <br>
+                <b>Categoria ANBIMA:</b> Ações Livre
+                <br>
+                <b>Tributação:</b> IR de 15% sobre o rendimento nominal. IOF em caso de resgate até o 29º dia após aplicação.
+              </p>
+              <p>
+                <img src="img/pdf-icon.png" class="pdf-icon"></img>
+                <span><a href="files/Relatorio_LO.pdf" target="_blank">Relatório</a></span>
+              </p>
+              <p>
+                <img src="img/pdf-icon.png" class="pdf-icon"></img>
+                <span><a href="files/Regulamento_LO.pdf" target="_blank">Regulamento</a></span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+        <div role="tabpanel" class="tab-pane fade pad-top-15" id="fundo-lb" aria-labelledby="tab-fundo-lb">
+            <div class="container">
+              <br>
+              <h3>Kondor Long Biased FIM CP (em breve Navi Long Biased FIM CP)</h3>
+              <br>
+          <div class="row">
+
+            <div class="col-lg-9 col-12">
+                <table class="table table-bordered">
+                    <thead>
+                      <tr class="kyrialBold table-text">
+                          <th>Rentabilidade</th>
+                          <th>12 Meses</th>
+                          <th>24 Meses</th>
+                          <th>36 Meses</th>
+                          <th>Desde o Início</th>                          
+                          <th>PL</th>
+                      </tr>
+                    </thead>
+            
+                    <tbody>
+                      <tr class="kyrialBold table-text">
+                          <td>Fundo</td>
+                          <td>34,00%</td>
+                          <td>-</td>
+                          <td>-</td>
+                          <td>49,36%</td>
+                          <td>R$ 26.055.474</td>
+                      </tr>
+                      <tr class="colorText table-text">
+                          <td>Ima-B</td>
+                          <td>6,45%</td>
+                          <td>-</td>
+                          <td>-</td>
+                          <td>17,93%</td>
+                          <td>-</td>
+                      </tr>
+                    </tbody>
+                  </table>
+<br>             
+              <p class="">
+                <img src="img/graficoLB.png"></img>
+              </p>
+<br>              
+            <p class="small-text">                
+              Dados de 31/07/2018 e início do fundo em 29/12/2016.
+            </p>
+              <!--p  class="text-justify">                
+                O objetivo desse fundo é buscar retorno aos seus cotistas através de investimentos em diversas classes de ativos financeiros disponíveis nos mercados de renda fixa, renda variável, cambial, derivativos e cotas de fundos de investimento, negociados nos mercados interno e externo, sem o compromisso de concentração em nenhuma classe específica.
+              </p-->
+                            
+            </div>
+            <div class="col-lg-3 col-12">
+              <p class="small-text">
+                <b>Público Alvo:</b> Investidores Qualificados.
+                <br>
+                <b>Aplicação:</b> D+0 até às 14h.
+                <br>
+                <b>Resgate (Cotização):</b> D+60 (corridos).
+                <br>
+                <b>Resgate (Pagamento):</b> 3º dia útil após cotização.
+                <br>
+                <b>Aplicação Inicial:</b> R$ 50.000,00
+                <br>
+                <b>Movimentação Mínima:</b> R$ 10.000,00
+                <br>
+                <b>Taxa de Administração:</b> 2% a.a. (pago mensalmente)
+                <br>
+                <b>Taxa de Performance:</b> 20% do que exceder 100% do IMA-B, com <i>high water mark</i>. (pago semestralmente)
+                <br>
+                <b>Administração:</b> BEM DTVM
+                <br>
+                <b>Custódia:</b> Banco Bradesco
+                <br>
+                <b>Auditoria:</b> KPMG.
+                <br>
+                <b>Categoria ANBIMA:</b> Multimercado Livre
+                <br>
+                <b>Tributação:</b> O fundo perseguirá o tratamento tributário dos fundos de renda variável. IOF em caso de resgate até o 29º dia após aplicação.
+              </p>
+              <p>
+                <img src="img/pdf-icon.png" class="pdf-icon"></img>
+                <span><a href="files/Relatorio_LB.pdf" target="_blank">Relatório</a></span>
+              </p>
+              <p>
+                <img src="img/pdf-icon.png" class="pdf-icon"></img>
+                <span><a href="files/Regulamento_LB.pdf" target="_blank">Regulamento</a></span>
+              </p>
+            </div>
+          </div>
+        </div>                
+      </div>
+
+<!--
+ ██████  ██████  ███    ██ ████████  █████  ████████  ██████
+██      ██    ██ ████   ██    ██    ██   ██    ██    ██    ██
+██      ██    ██ ██ ██  ██    ██    ███████    ██    ██    ██
+██      ██    ██ ██  ██ ██    ██    ██   ██    ██    ██    ██
+ ██████  ██████  ██   ████    ██    ██   ██    ██     ██████
+-->
+        <div role="tabpanel" class="tab-pane fade" id="contato" aria-labelledby="tab-contato">
+            <div class="container">
+          <div class="row pad-top-15">
+
+            <div class="col-lg-3 col-12">
+            <h3>Navi Capital Ltda.</h3>
+              <p>
+                <h4>Endereço</h4>
+                Avenida Ataulfo de Paiva 1100 Sala 601
+                <br> Leblon - Rio de Janeiro - Brasil
+                <br> CEP: 22440-035
+              </p>
+              <p>
+                <h4>Telefone</h4>
+                +55 21 3590-2410
+              </p>
+              <p>
+                <h4>E-mail</h4>
+                <a href="mailto:contato@navicap.com.br?subject=Contato">contato@navicap.com.br</a>
+              </p>
+            </div>
+            <div class="col-9 d-none d-lg-block">
+              <div id="contato_lat">
+                <iframe width="580" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3673.053283250688!2d-43.22855928541748!3d-22.9850680464467!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9bd5b3323b106b%3A0x8bc3c7502d4c7338!2sAv.+Ataulfo+de+Paiva%2C+1100+-+Leblon%2C+Rio+de+Janeiro+-+RJ%2C+22440-035!5e0!3m2!1spt-BR!2sbr!4v1532602549156" style="border:0" allowfullscreen></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div role="tabpanel" class="tab-pane fade" id="downloads" aria-labelledby="tab-downloads">
+          <div class="container">
+              <br>
+            <div class="row pad-top-15">
+          <div class="col-lg-8 d-none d-lg-block">
+              <img src="img/ideianova.jpg" class="d-block w-100 documentsPhoto"></img>
+          </div>
+          <div class="col-lg-4 col-12">
+            <br>
+            <br>
+              <p>
+                <img src="img/pdf-icon.png" class="pdf-icon"></img>
+                <span><a href="files/Formulario%20de%20Referencia%202017.pdf" target="_blank">Formulário de referência</a></span>
+              </p>
+              <p>
+                <img src="img/pdf-icon.png" class="pdf-icon"></img>
+                <span><a href="files/Codigo%20de%20Etica.pdf" target="_blank">Código de ética</a></span>
+              </p>
+              <p>
+                <img src="img/pdf-icon.png" class="pdf-icon"></img>
+                <span><a href="files/Politica%20de%20Risco%20de%20Mercado.pdf" target="_blank">Manual de risco de mercado</a></span>
+              </p>
+              <p>
+                <img src="img/pdf-icon.png" class="pdf-icon"></img>
+                <span><a href="files/Politica%20de%20Risco%20de%20Liquidez.pdf" target="_blank">Manual de risco de liquidez</a></span>
+              </p>
+              <p>
+                <img src="img/pdf-icon.png" class="pdf-icon"></img>
+                <span><a href="files/Politica%20de%20Risco%20de%20Credito.pdf" target="_blank">Manual de risco de crédito</a></span>
+              </p>
+              <p>
+                <img src="img/pdf-icon.png" class="pdf-icon"></img>
+                <span><a href="files/Politica%20de%20Controles%20Internos.pdf" target="_blank">Controles internos</a></span>
+              </p>
+              <p>
+                <img src="img/pdf-icon.png" class="pdf-icon"></img>
+                <span><a href="files/Politica%20de%20Rateio%20e%20Divisao%20de%20Ordens.pdf" target="_blank">Política de rateio e divisão de ordens</a></span>
+              </p>
+              <p>
+                <img src="img/pdf-icon.png" class="pdf-icon"></img>
+                <span><a href="files/Politica%20de%20Investimentos%20Pessoais.pdf" target="_blank">Política de Investimentos Pessoais</a></span>
+              </p>
+              <p>
+                <img src="img/pdf-icon.png" class="pdf-icon"></img>
+                <span><a href="files/Prevencao%20a%20Lavagem%20de%20Dinheiro.pdf" target="_blank">Política de PLD</a></span>
+              </p>
+          </div>
+        </div>
+      </div>
+    </div>
+<!--
+███████  ██████  ██    ██ ██ ██████  ███████
+██      ██    ██ ██    ██ ██ ██   ██ ██
+█████   ██    ██ ██    ██ ██ ██████  █████
+██      ██ ▄▄ ██ ██    ██ ██ ██      ██
+███████  ██████   ██████  ██ ██      ███████
+            ▀▀
+-->
+        <div role="tabpanel" class="tab-pane fade container pad-top-15" id="equipe" aria-labelledby="tab-equipe">
+          <div class="row pad-top-15">
+              <div class="col-12">
+                  <p class="text-justify">
+                  <h3>Nossa equipe é jovem, cheia de energia, foco e vontade de alcançar grandes realizações</h3>
+                  </p>
+
+                  <p class="text-justify">                      
+                      Acompanhamos toda informação disponível. Arregaçamos a manga e fazemos o trabalho de campo também. Viajamos milhares de quilômetros em busca de informações direto da fonte. A nossa vida não se resume à tela do computador.                          
+                  </p>
+    
+                  <p  class="text-justify">
+                      Estudo, desenvolvimento e muita discussão. Todos os dias, todas as horas. De igual para igual. Pensando juntos, temos mais chance de entregar o melhor resultado. É dessa maneira que criamos uma cultura cada vez mais moderna para nossa empresa.
+                  </p>
+              </div>
+          </div>
+          <br>
+          <div class="row">          
+            <div class="col-4">
+              <h4>Gestão</h4>
+              <a class="colorText" target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/felipe-campos-99a06015/">Felipe Campos</a><br>
+              <a class="colorText" target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/waldir-serafim-filho-57915120/">Waldir Serafim</a><br>
+              <a class="colorText" target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/felipetaylor/">Felipe Taylor</a>
+            </div>
+            <div class="col-4">
+              <h4>Análise</h4>
+              <a class="colorText" target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/matheus-amorim-8795b351/">Matheus Amorim</a><br>
+              <a class="colorText" target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/jorge-dantas-neto-618a5497/">Jorge Dantas</a><br>
+              <a class="colorText" target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/gustavo-lima-bbb515147/">Gustavo Lima</a><br>
+              <a class="colorText" target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/luisa-carneiro-alves-souto-20569048/">Luisa Souto</a><br>
+              <a class="colorText" target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/alexandre-crespo-193686122/">Alexandre Crespo</a>
+            </div>
+            <div class="col-4">
+              <h4>Operações</h4>
+              <a class="colorText" target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/jo%C3%A3o-paulo-de-aragon-frm-a8558649/">João Aragon</a><br>
+              <a class="colorText" target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/marcelo-freitas-de-araujo-215151b3/">Marcelo Araújo</a>
+            </div>
+          </div>
+          <br>
+    </div>
+    <hr>
+
+<!--
+███████  ██████   ██████  ████████ ███████ ██████
+██      ██    ██ ██    ██    ██    ██      ██   ██
+█████   ██    ██ ██    ██    ██    █████   ██████
+██      ██    ██ ██    ██    ██    ██      ██   ██
+██       ██████   ██████     ██    ███████ ██   ██
+-->
+    <footer class="container">
+      <div class="row">
+        <div class="col-lg-10 col-12">
+          <p class="small-text condensed-text text-justify">
+            A Navi Capital Ltda. não comercializa nem distribui cotas de fundos de investimento ou qualquer outro ativo financeiro. As informações contidas nesse material são de caráter exclusivamente informativo e não devem ser consideradas uma recomendação
+            ou oferta para aquisição de cotas de fundos de investimento. Fundos de investimento não contam com a garantia do administrador, do gestor da carteira, de qualquer mecanismo de seguro ou, ainda, do fundo garantidor de créditos (FGC). A rentabilidade
+            passada não representa garantia de rentabilidade futura. Ao investidor é recomendada a leitura cuidadosa do prospecto (caso haja) e do regulamento dos fundos de investimento ao aplicar seus recursos. Maiores detalhes podem ser obtidos na lâmina
+            de informações essenciais produzida pelo administrador dos fundos localizada no seu website. Estes fundos utilizam estratégias com derivativos como parte integrante de sua política de investimento; tais estratégias, da forma
+            como são adotadas, podem resultar em significativas perdas patrimoniais para seus cotistas, podendo inclusive acarretar perdas superiores ao capital aplicado e a consequente obrigação do cotista de aportar recursos adicionais para cobrir o prejuízo
+            dos fundos. A rentabilidade divulgada não é líquida de impostos.
+          </p>
+        </div>
+        <div class="col-lg-2 col-12" id="anbima">
+          <div class="row">
+            <div class="col-12">
+              <a href="http://www.anbima.com.br/" target="_blank">
+                <img src="img/anbima.png" alt="Anbima"></img>
+              </a>
+            </div>
+          </div>            
+            <div class="row">
+            <div class="col-12">
+              <a href="http://www.comoinvestir.com.br/" target="_blank">
+                <img src="img/investir.png" alt="Como Investir"></img>
+              </a>
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+      <hr>
+      <p class="text-center">
+        &copy; Copyright Navi Capital 2018 | Em Construção | 
+        <a href="mailto:contato@navicap.com.br" target="_blank">contato@navicap.com.br</a> |
+        <a href="tel:+552135902410">+55 21 3590-2410</a>
+      </p>
+    </footer>
+  </body>
+</html>

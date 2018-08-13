@@ -1,0 +1,153 @@
+.KyrialSansProSemiBold { 
+	font-family: KyrialSansProSemiBold;
+	font-weight: normal;
+	font-style: normal;
+}
+.KyrialSansProBold { 
+	font-family: KyrialSansProBold;
+	font-weight: normal;
+	font-style: normal;
+}
+.KyrialSansProLight { 
+	font-family: KyrialSansProLight;
+	font-weight: normal;
+	font-style: normal;
+}
+.KyrialSansProRegular { 
+	font-family: KyrialSansProRegular;
+	font-weight: normal;
+	font-style: normal;
+}
+.KyrialSansProLight-Italic { 
+	font-family: KyrialSansProLight-Italic;
+	font-weight: normal;
+	font-style: normal;
+}
+.KyrialSansProRegular-Italic { 
+	font-family: KyrialSansProRegular-Italic;
+	font-weight: normal;
+	font-style: normal;
+}
+.KyrialSansProBold-Italic { 
+	font-family: KyrialSansProBold-Italic;
+	font-weight: normal;
+	font-style: normal;
+}
+.KyrialSansProSemiBold-Italic { 
+	font-family: KyrialSansProSemiBold-Italic;
+	font-weight: normal;
+	font-style: normal;
+}
+.AmpleSoft-Light { 
+	font-family: AmpleSoft-Light;
+	font-weight: normal;
+	font-style: normal;
+}
+
+body { 
+	font-family: KyrialSansProRegular;
+}
+
+.nav-link.active {
+	background-color: #313265 !important;
+	color: #FFFFFF !important;
+}
+
+.nav-pills .show>.nav-link {
+	background-color: #313265 !important;
+	color: #FFFFFF !important;
+}
+
+.dropdown-item.active {
+	background-color: #313265 !important;	
+	color: #FFFFFF !important;
+}
+
+a{
+	color: #313265 !important;	
+}
+
+h1, h2, h3, h4, h5 { 
+	font-family: KyrialSansProRegular; 
+	font-weight: normal; 
+	font-style: normal; 
+}
+
+.containerImg {
+  position: absolute;
+  top: 0px; 
+  left: 1000px;
+}
+
+#tabela {
+  width: 100%;
+  height: 365px;
+}
+
+
+.table-text { font-size: 13px; }
+.small-text { font-size: 11px; }
+.condensed-text { line-height: 13px; }
+.pdf-icon { height: 25px; }
+.kyrialBold { font-family: KyrialSansProBold !important;  }
+
+p {
+	color:#616161;
+}	
+
+/*
+.carousel-inner{
+  max-height: 400px !important;
+}
+*/
+
+iframe {
+border:none;
+}
+
+.pad-top-15 {
+ padding-top:15px !important;
+}
+
+.pad-right-15 {
+ padding-right:15px !important;
+}
+
+body {
+	background-color:#FFFFFF;
+}
+
+.documentsPhoto {
+	max-width: 650px;
+}
+
+.colorText{
+ color:#616161;
+}
+
+#logo {
+  height: 60px;
+}
+
+ul.nav {
+  margin-top: 20px;
+}
+
+
+.colorPurple{
+ color:#313265 !important;
+}
+
+#contato_lat {
+	float: right;
+	max-height:380px;
+	max-width:580px;
+	background-color:#FFFFFF;
+}
+
+#anbima img {
+  max-width: 100%;
+  max-height: 100%;
+  border: thin solid #eee;
+  margin-bottom: 5px;
+}
