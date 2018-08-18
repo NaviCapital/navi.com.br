@@ -1,3 +1,49 @@
+.KyrialSansProSemiBold { 
+	font-family: KyrialSansProSemiBold;
+	font-weight: normal;
+	font-style: normal;
+}
+.KyrialSansProBold { 
+	font-family: KyrialSansProBold;
+	font-weight: normal;
+	font-style: normal;
+}
+.KyrialSansProLight { 
+	font-family: KyrialSansProLight;
+	font-weight: normal;
+	font-style: normal;
+}
+.KyrialSansProRegular { 
+	font-family: KyrialSansProRegular;
+	font-weight: normal;
+	font-style: normal;
+}
+.KyrialSansProLight-Italic { 
+	font-family: KyrialSansProLight-Italic;
+	font-weight: normal;
+	font-style: normal;
+}
+.KyrialSansProRegular-Italic { 
+	font-family: KyrialSansProRegular-Italic;
+	font-weight: normal;
+	font-style: normal;
+}
+.KyrialSansProBold-Italic { 
+	font-family: KyrialSansProBold-Italic;
+	font-weight: normal;
+	font-style: normal;
+}
+.KyrialSansProSemiBold-Italic { 
+	font-family: KyrialSansProSemiBold-Italic;
+	font-weight: normal;
+	font-style: normal;
+}
+.AmpleSoft-Light { 
+	font-family: AmpleSoft-Light;
+	font-weight: normal;
+	font-style: normal;
+}
+
 body,
 html {
   width: 100%;
@@ -5,7 +51,7 @@ html {
 }
 
 body {
-  font-family: 'Merriweather', 'Helvetica Neue', Arial, sans-serif;
+  font-family: KyrialSansProLight;
 }
 
 hr {
@@ -35,7 +81,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+  font-family: AmpleSoft-Light;
 }
 
 .bg-primary {
@@ -83,7 +129,7 @@ img::-moz-selection {
 #mainNav {
   border-bottom: 1px solid rgba(33, 37, 41, 0.1);
   background-color: #fff;
-  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+  font-family: AmpleSoft-Light;
   -webkit-transition: all 0.2s;
   -moz-transition: all 0.2s;
   transition: all 0.2s;
@@ -93,7 +139,7 @@ img::-moz-selection {
   font-weight: 700;
   text-transform: uppercase;
   color: #f1725e;
-  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+  font-family: AmpleSoft-Light;
 }
 
 #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
@@ -130,7 +176,7 @@ img::-moz-selection {
     background-color: transparent;
   }
   #mainNav .navbar-brand {
-    color: rgba(255, 255, 255, 0.7);
+    color: rgba(255, 255, 255, 1);
   }
   #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
     color: #fff;
@@ -140,7 +186,7 @@ img::-moz-selection {
   }
   #mainNav .navbar-nav > li.nav-item > a.nav-link,
   #mainNav .navbar-nav > li.nav-item > a.nav-link:focus {
-    color: rgba(255, 255, 255, 0.7);
+    color: rgba(255, 255, 255, 1);
   }
   #mainNav .navbar-nav > li.nav-item > a.nav-link:hover,
   #mainNav .navbar-nav > li.nav-item > a.nav-link:focus:hover {
@@ -169,7 +215,8 @@ img::-moz-selection {
 header.masthead {
   padding-top: 10rem;
   padding-bottom: calc(10rem - 56px);
-  background-image: url("../img/header.jpg");
+  /*background-image: url("");*/
+  background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url('../img/header2.jpg');
   background-position: center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -251,12 +298,12 @@ header.masthead p {
 .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category,
 .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
   padding: 0 15px;
-  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+  font-family: AmpleSoft-Light;
 }
 
 .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category {
-  font-size: 14px;
-  font-weight: 600;
+  font-size: 20px;
+  font-weight: 200;
   text-transform: uppercase;
 }
 
@@ -274,7 +321,7 @@ header.masthead p {
 
 @media (min-width: 768px) {
   .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category {
-    font-size: 16px;
+    font-size: 20px;
   }
   .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
     font-size: 22px;
@@ -290,7 +337,7 @@ header.masthead p {
   text-transform: uppercase;
   border: none;
   border-radius: 300px;
-  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+  font-family: AmpleSoft-Light;
 }
 
 .btn-xl {
@@ -314,10 +361,18 @@ header.masthead p {
 
 /* Customizações */
 .graph-table {
-  font-size: 12px;
+  font-size: 14px;
 }
 .graph-text {
-  font-size: 10px;
+  font-size: 11px;
+}
+
+.text-Company {
+  font-size: 20px;
+}
+
+.text-Team{
+  font-size: 15px;
 }
 
 @media (min-width: 992px){ .modal-lg { max-width: 80%; } }
@@ -332,4 +387,21 @@ header.masthead p {
 
 .portfolio-box-caption-content {
   opacity: 1 !important;
+}
+
+.section-Team {
+  padding: 4rem 0;
+}
+
+.section-Portfolio {
+  padding: 2rem 0;
+}
+
+
+.section-Contato {
+  padding: 4rem 0;
+}
+
+.div-Documents {
+  padding-bottom: 20px;
 }
