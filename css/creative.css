@@ -368,7 +368,7 @@ header.masthead p {
 }
 
 .text-Company {
-  font-size: 20px;
+  font-size: 15px;
 }
 
 .text-Team{
@@ -390,6 +390,10 @@ header.masthead p {
 }
 
 .section-Team {
+  padding: 4rem 0;
+}
+
+.section-Company {
   padding: 4rem 0;
 }
 
