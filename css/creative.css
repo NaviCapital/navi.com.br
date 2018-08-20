@@ -368,7 +368,7 @@ header.masthead p {
 }
 
 .text-Company {
-  font-size: 15px;
+  font-size: 20px;
 }
 
 .text-Team{
@@ -402,10 +402,6 @@ header.masthead p {
 }
 
 .section-Contato {
-  padding: 4rem 0;
-}
-
-.section-About {
   padding: 4rem 0;
 }
 
