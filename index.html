@@ -70,19 +70,24 @@
     </nav>
 
     <header class="masthead text-center text-white d-flex">
-      <div class="container my-auto">
-        <div class="row">
-          <div class="col-lg-10 mx-auto">
-            <h1 class="text-uppercase">
-              <strong>Investindo em boas ideias</strong>
-            </h1>
-            <hr>
-          </div>
-          <div class="col-lg-8 mx-auto">
-            <a class="btn btn-primary btn-xl" href="https://navicapitalgestao.orama.com.br/novo-cadastro/novo-cliente/3810">Invista Aqui</a>
-          </div>
-        </div>
-      </div>
+		<div class="overlay">
+		</div>
+		<video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+			<source src="video/Planodefundo.mp4" type="video/mp4">
+		</video>
+		<div class="container my-auto">
+			<div class="row">
+			  <div class="col-lg-10 mx-auto">
+				<h1 class="text-uppercase">
+				  <strong>Investindo em boas ideias</strong>
+				</h1>
+				<hr>
+			  </div>
+			  <div class="col-lg-8 mx-auto">
+				<a class="btn btn-primary btn-xl" href="https://navicapitalgestao.orama.com.br/novo-cadastro/novo-cliente/3810">Invista Aqui</a>
+			  </div>
+			</div>
+		</div>
     </header>
 
     <section class="bg-primary section-Company" id="about">
@@ -467,6 +472,19 @@
           $(this).load(file);
         });
       });
+    </script>
+	
+	 <script>
+		$(document).ready(function(){
+		  var screenWidth = $(window).width();
+		  // if window width is smaller than 800 remove the autoplay attribute
+		  // from the video
+		  if (screenWidth < 800){
+				$('video').remove();
+		  } else {
+			$('video').attr('autoplay');
+		  }
+		});
     </script>
 
     <!-- Modal Cotas -->
