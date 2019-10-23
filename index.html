@@ -15,6 +15,10 @@
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link rel="shortcut icon" href="img/navi48.ico">
 
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
     <!-- Plugin CSS -->
     <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
 
@@ -23,6 +27,7 @@
     <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" type="text/css" href="css/MyFontsWebfontsKit.css">
     <link rel="stylesheet" type="text/css" href="css/creative.css">    
+    <link rel="stylesheet" type="text/css" href="flags/flag.css">
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-144099195-1"></script>
@@ -50,19 +55,30 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#about">Sobre</a>
+              <a class="nav-link js-scroll-trigger" href="#about" data-localize="menu.about"></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#services">Equipe</a>
+              <a class="nav-link js-scroll-trigger" href="#services" data-localize="menu.team"></a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item pt-only">
               <a class="nav-link js-scroll-trigger" href="#portfolio">Produtos</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item pt-only">
               <a class="nav-link" href="#" data-toggle="modal" data-target=".modal-cotas">Cotas e Rentabilidade</a>
             </li>            
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#contact">Contato</a>
+              <a class="nav-link js-scroll-trigger" href="#contact" data-localize="menu.contact"></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link"></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link"></a>
+            </li>
+            <li class="nav-item" style="display: inline-flex;">
+              <a class="nav-link" style="padding-right: 0.3rem;" onclick='$("[data-localize]").localize("navi", { language: "pt" }); $(".pt-only").show();' href="javascript:void(0);">PT</a>
+              <a class="nav-link" style="padding-right: 0;padding-left: 0;">|</a>
+              <a class="nav-link" style="padding-left: 0.3rem;" onclick='$("[data-localize]").localize("navi", { language: "en" }); $(".pt-only").hide();' href="javascript:void(0);">EN</a>
             </li>
           </ul>
         </div>
@@ -79,11 +95,11 @@
 			<div class="row">
 			  <div class="col-lg-10 mx-auto">
 				<h1 class="text-uppercase">
-				  <strong>Investindo em boas ideias</strong>
+				  <strong data-localize="slogan"></strong>
 				</h1>
 				<hr>
 			  </div>
-			  <div class="col-lg-8 mx-auto">
+			  <div class="col-lg-8 mx-auto pt-only">
 				<a class="btn btn-primary btn-xl" href="https://navicapitalgestao.orama.com.br/novo-cadastro/novo-cliente/3810">Invista Aqui</a>
 			  </div>
 			</div>
@@ -94,21 +110,15 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-8 mx-auto text-center">
-            <h2 class="section-heading text-white">Venha conhecer o jeito Navi de Investir</h2>
+            <h2 class="section-heading text-white" data-localize="home.title"></h2>
             <hr class="light my-4">
-            <h3 class="section-heading text-white">Nosso nome vem de “navigate”, navegar, o ato de guiar o caminho com estratégia, segurança e cuidado.</h3>
+            <h3 class="section-heading text-white" data-localize="home.subtitle"></h3>
             <div class="text-Company">
-            <p class="text-faded mb-4">
-                Nascemos em 2018, após uma gestação de 9 anos como equipe na Kondor Invest. Criamos um processo e cultura diferenciados com foco no mercado de ações brasileiro.              
-            </p>
-            <p class="text-faded mb-4">
-                Somos uma empresa jovem e obcecada por estudar. É com o conhecimento que acumulamos que escolhemos os melhores investimentos para médio e longo prazo. Preservamos e potencializamos capital com cada vez mais acerto por meio do darwinismo de ideias – discutir em conjunto até que apenas os melhores argumentos sobrevivam e se tornem investimentos.              
-            </p>
-            <p class="text-faded mb-4">
-                Estudo, desenvolvimento e muita discussão. Todos os dias, todas as horas e em qualquer lugar. De igual para igual. Pensando juntos, temos mais chance de entregar o melhor para nossos clientes. Dessa maneira criamos uma cultura cada vez mais moderna para nossa empresa. 
-            </p>            
+            <p class="text-faded mb-4" data-localize="home.paragraph_1"></p>
+            <p class="text-faded mb-4" data-localize="home.paragraph_2"></p>
+            <p class="text-faded mb-4" data-localize="home.paragraph_3"></p>            
             </div>
-            <a class="btn btn-light btn-xl js-scroll-trigger mt-3" href="#services">Conheça o time</a>
+            <a class="btn btn-light btn-xl js-scroll-trigger mt-3" href="#services" data-localize="home.button"></a>
           </div>
         </div>
       </div>
@@ -118,16 +128,12 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center">
-            <h2 class="section-heading">Equipe</h2>
+            <h2 class="section-heading" data-localize="team.title"></h2>
             <hr class="my-4"> 
-            <h3>Nossa equipe é jovem, cheia de energia, foco e vontade de alcançar grandes realizações</h3>                                     
+            <h3 data-localize="team.subtitle"></h3>                                     
             <div class="text-Team">
-              <p class="mb-4">
-                Acompanhamos toda informação disponível. Arregaçamos a manga e fazemos o trabalho de campo também. Viajamos milhares de quilômetros em busca de informações direto da fonte. A nossa vida não se resume à tela do computador.
-              </p>  
-              <p  class="mb-4">
-                  Na Navi, estudar é um vício e um prazer que viraram negócio. Temos fome de conhecimento e já acordamos com as notícias na mão. O mercado não para de mudar e a gente não para de estudar. Estamos sempre revendo nosso olhar e melhorando nosso saber. No dia seguinte, acordamos para estudar mais.
-              </p>
+              <p class="mb-4" data-localize="team.paragraph_1"></p>  
+              <p  class="mb-4" data-localize="team.paragraph_2"></p>
             </div>
           </div>
         </div>
@@ -138,7 +144,7 @@
           <div class="col-md-2 text-center">
             <div class="service-box mt-5 mx-auto">
               <i class="fas fa-4x fa-hand-holding-usd text-primary mb-3 sr-icons"></i>
-              <h3 class="mb-3">Gestão</h3>
+              <h3 class="mb-3" data-localize="team.department_1"></h3>
 			  <p><a class="text-muted mb-2" target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/adam-matos-silveira-352854bb/">Adam Matos</a></p>
               <p><a class="text-muted mb-2" target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/felipe-campos-99a06015/">Felipe Campos</a></p>
               <p><a class="text-muted mb-2" target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/felipetaylor/">Felipe Taylor</a></p>
@@ -148,7 +154,7 @@
           <div class="col-md-2 text-center">
             <div class="service-box mt-5 mx-auto">
               <i class="fa fa-4x fa-chart-area text-primary mb-3 sr-icons"></i>
-              <h3 class="mb-3">Análise</h3>
+              <h3 class="mb-3" data-localize="team.department_2"></h3>
               <p><a class="text-muted mb-2" target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/alexandre-crespo-193686122/">Alexandre Crespo</a></p>
 			  <p><a class="text-muted mb-2" target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/guilherme-sadahiro/">Guilherme Sadahiro</a></p>
 			  <p><a class="text-muted mb-2" target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/gustavo-lima-bbb515147/">Gustavo Lima</a></p>
@@ -161,7 +167,7 @@
           <div class="col-md-2 text-center">
             <div class="service-box mt-5 mx-auto">
               <i class="fa fa-4x fa-cogs text-primary mb-3 sr-icons"></i>
-              <h3 class="mb-3">Operações</h3>
+              <h3 class="mb-3" data-localize="team.department_3"></h3>
               <p><a class="text-muted mb-2" target="_blank" rel="noopener noreferrer" href="">Aline Matos</a></p>
               <p><a class="text-muted mb-2" target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/daniel-lee-moraes-32b32767/">Daniel Lee</a></p>
               <p><a class="text-muted mb-2" target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/diego-sales-207236116/">Diego Sales</a></p>
@@ -173,7 +179,7 @@
           <div class="col-md-2 text-center">
             <div class="service-box mt-5 mx-auto">
               <i class="fa fa-4x fa-users text-primary mb-3 sr-icons"></i>
-              <h3 class="mb-3">RI e Marketing</h3>
+              <h3 class="mb-3" data-localize="team.department_4"></h3>
               <p><a class="text-muted mb-2" target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/marcella-derze-116a2b73/">Marcella Derze</a><br></p>
               <p><a class="text-muted mb-2" target="_blank" rel="noopener noreferrer" href="https://br.linkedin.com/in/natasha-brigag%C3%A3o-98078475/">Natasha Brigagão</a><br></p>
             </div>
@@ -181,7 +187,7 @@
           <div class="col-md-2 text-center">
             <div class="service-box mt-5 mx-auto">
               <i class="fa fa-4x fa-database text-primary mb-3 sr-icons"></i>
-              <h3 class="mb-3">Data Science</h3>
+              <h3 class="mb-3" data-localize="team.department_5"></h3>
 			  <p><a class="text-muted mb-2" target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/alexia-pimentel-251937105/">Alexia Pimentel</a><br></p>
               <p><a class="text-muted mb-2" target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/antonio-lobato-50657290/">Antonio Lobato</a><br></p>
 			  <p><a class="text-muted mb-2" target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/carlos-felipe-domingues-e-oliveira-62963290/">Carlos Domingues</a><br></p>
@@ -192,7 +198,7 @@
         </div>
         <br>
         <br>
-        <div class="row">
+        <div class="row pt-only">
           <div class="col-md-8 mx-auto text-center">
             <a class="btn btn-primary btn-xl js-scroll-trigger" href="#portfolio">Conheça nossos produtos</a>
           </div>          
@@ -201,13 +207,13 @@
       <br>
     </section>
 
-    <section class="bg-primary text-white pb-2 section-Portfolio" id="portfolio">
+    <section class="bg-primary text-white pb-2 section-Portfolio pt-only" id="portfolio">
       <div class="container-fluid text-center">
         <h2 class="mb-3"><strong>Nossos Produtos</strong></h2>
       </div>
     </section>
 
-    <section class="p-0 bg-dark">
+    <section class="p-0 bg-dark pt-only">
       <div class="container-fluid p-0">
         <div class="row no-gutters">
 
@@ -383,20 +389,20 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-8 mx-auto text-center">
-            <h2 class="section-heading">Estamos ao seu alcance</h2>
+            <h2 class="section-heading" data-localize="contact.title"></h2>
             <hr class="my-4">
           </div>
         </div>
         <div class="row">
             <div class="col-lg-3 ml-auto text-center">              
-              <p>Av. Ataulfo de Paiva, 1100, sala 601</p>
+              <p data-localize="contact.rj_street"></p>
               <p>22440-035 Leblon</p>
-              <p>Rio de Janeiro, RJ - Brasil</p>
+              <p data-localize="contact.rj"></p>
             </div>
             <div class="col-lg-3 mr-auto text-center">
-              <p>Rua Elvira Ferraz, 250, sala 305</p>
+              <p data-localize="contact.sp_street"></p>
               <p>04552-040 Vila Olímpia</p>
-              <p>São Paulo, SP - Brasil</p>
+              <p data-localize="contact.sp"></p>
             </div>            
         </div>
         <div class="row">
@@ -413,13 +419,13 @@
             </a>
           </div>
           <div class="col-lg-3 mr-auto text-center">
-            <a href="https://www.linkedin.com/company/navicapital/?originalSubdomain=pt">
+            <a href="https://www.linkedin.com/company/navicapital/?originalSubdomain=pt" target="_blank">
               <i class="fa fa-linkedin-in fa-3x mb-3 sr-contact"></i>
               <p>Linkedin</p>
             </a>
           </div>
 		  <div class="col-lg-3 mr-auto text-center">
-            <a href="https://www.instagram.com/navicapital/">
+            <a href="https://www.instagram.com/navicapital/" target="_blank">
               <i class="fa fa-instagram fa-3x mb-3 sr-contact"></i>
               <p>Instagram</p>
             </a>
@@ -432,9 +438,7 @@
     <section id="disclaimer" style="border-top: 1px solid lightgray;">
       <div class="container" style="font-size:15px;">
         <div class="row">
-          <div class="col-lg-9 col-12 text-muted small text-justify">
-            A Navi Capital Ltda. não comercializa nem distribui cotas de fundos de investimento ou qualquer outro ativo financeiro. As informações contidas nesse material são de caráter exclusivamente informativo e não devem ser consideradas uma recomendação ou oferta para aquisição de cotas de fundos de investimento. Fundos de investimento não contam com a garantia do administrador, do gestor da carteira, de qualquer mecanismo de seguro ou, ainda, do fundo garantidor de créditos (FGC). A rentabilidade passada não representa garantia de rentabilidade futura. Ao investidor é recomendada a leitura cuidadosa do prospecto (caso haja) e do regulamento dos fundos de investimento ao aplicar seus recursos. Maiores detalhes podem ser obtidos na lâmina de informações essenciais produzida pelo administrador dos fundos localizada no seu website. Estes fundos utilizam estratégias com derivativos como parte integrante de sua política de investimento; tais estratégias, da forma como são adotadas, podem resultar em significativas perdas patrimoniais para seus cotistas, podendo inclusive acarretar perdas superiores ao capital aplicado e a consequente obrigação do cotista de aportar recursos adicionais para cobrir o prejuízo dos fundos. A rentabilidade divulgada não é líquida de impostos.
-          </div>
+          <div class="col-lg-9 col-12 text-muted small text-justify" data-localize="contact.disclaimer"></div>
 
           <div class="col-lg-3 col-12" id="anbima">
             <div class="row">
@@ -457,10 +461,6 @@
       </div>
     </section>
 
-    <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
     <!-- Plugin JavaScript -->
     <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
     <script src="vendor/scrollreveal/scrollreveal.min.js"></script>
@@ -468,6 +468,19 @@
 
     <!-- Custom scripts for this template -->
     <script src="js/creative.min.js"></script>
+
+    <!-- language pack -->
+    <script src="js/jquery.localize.min.js"></script>
+    <script>
+      var language = (navigator.languages ? navigator.languages[0] : (navigator.language || navigator.userLanguage)).substring(0,2);
+      language = ["pt", "en"].includes(language) ? language : "pt";
+      $("[data-localize]").localize("navi", { language: language });
+      if(language == "pt"){
+        $(".pt-only").show();
+      } else {
+        $(".pt-only").hide();
+      }
+    </script>
 
     <script>
       $(function(){

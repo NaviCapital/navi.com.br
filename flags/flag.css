@@ -1,0 +1,17 @@
+.br {
+    background: url(br.svg);
+    display: inline-block;
+    text-indent: -9999px;
+    width: 20px;
+    height: 20px;
+    background-size: 20px 20px;
+}
+
+.us {
+    background: url(us.svg);
+    display: inline-block;
+    text-indent: -9999px;
+    width: 20px;
+    height: 20px;
+    background-size: 20px 20px;
+}

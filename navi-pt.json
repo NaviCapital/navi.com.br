@@ -1,0 +1,35 @@
+{
+    "menu" : {
+        "about": "Sobre",
+        "team": "Equipe",
+        "contact": "Contato"
+    },
+    "slogan": "Investindo em boas ideias",
+    "home": {
+        "title": "Venha conhecer o jeito Navi de Investir",
+        "subtitle": "Nosso nome vem de “navigate”, navegar, o ato de guiar o caminho com estratégia, segurança e cuidado.",
+        "paragraph_1": "Nascemos em 2018, após uma gestação de 9 anos como equipe na Kondor Invest. Criamos um processo e cultura diferenciados com foco no mercado de ações brasileiro.",
+        "paragraph_2": "Somos uma empresa jovem e obcecada por estudar. É com o conhecimento que acumulamos que escolhemos os melhores investimentos para médio e longo prazo. Preservamos e potencializamos capital com cada vez mais acerto por meio do darwinismo de ideias – discutir em conjunto até que apenas os melhores argumentos sobrevivam e se tornem investimentos.",
+        "paragraph_3": "Estudo, desenvolvimento e muita discussão. Todos os dias, todas as horas e em qualquer lugar. De igual para igual. Pensando juntos, temos mais chance de entregar o melhor para nossos clientes. Dessa maneira criamos uma cultura cada vez mais moderna para nossa empresa.",
+        "button": "Conheça o time"
+    },
+    "team": {
+        "title": "Equipe",
+        "subtitle": "Nossa equipe é jovem, cheia de energia, foco e vontade de alcançar grandes realizações",
+        "paragraph_1": "Acompanhamos toda informação disponível. Arregaçamos a manga e fazemos o trabalho de campo também. Viajamos milhares de quilômetros em busca de informações direto da fonte. A nossa vida não se resume à tela do computador.",
+        "paragraph_2": "Na Navi, estudar é um vício e um prazer que viraram negócio. Temos fome de conhecimento e já acordamos com as notícias na mão. O mercado não para de mudar e a gente não para de estudar. Estamos sempre revendo nosso olhar e melhorando nosso saber. No dia seguinte, acordamos para estudar mais.",
+        "department_1": "Gestão",
+        "department_2": "Análise",
+        "department_3": "Operações",
+        "department_4": "RI e Marketing",
+        "department_5": "Data Science"
+    },
+    "contact": {
+        "title": "Estamos ao seu alcance",
+        "rj_street": "Av. Ataulfo de Paiva, 1100, sala 601",
+        "sp_street": "Rua Elvira Ferraz, 250, sala 305",
+        "rj": "Rio de Janeiro, RJ - Brasil",
+        "sp": "São Paulo, SP - Brasil",
+        "disclaimer": "A Navi Capital Ltda. não comercializa nem distribui cotas de fundos de investimento ou qualquer outro ativo financeiro. As informações contidas nesse material são de caráter exclusivamente informativo e não devem ser consideradas uma recomendação ou oferta para aquisição de cotas de fundos de investimento. Fundos de investimento não contam com a garantia do administrador, do gestor da carteira, de qualquer mecanismo de seguro ou, ainda, do fundo garantidor de créditos (FGC). A rentabilidade passada não representa garantia de rentabilidade futura. Ao investidor é recomendada a leitura cuidadosa do prospecto (caso haja) e do regulamento dos fundos de investimento ao aplicar seus recursos. Maiores detalhes podem ser obtidos na lâmina de informações essenciais produzida pelo administrador dos fundos localizada no seu website. Estes fundos utilizam estratégias com derivativos como parte integrante de sua política de investimento; tais estratégias, da forma como são adotadas, podem resultar em significativas perdas patrimoniais para seus cotistas, podendo inclusive acarretar perdas superiores ao capital aplicado e a consequente obrigação do cotista de aportar recursos adicionais para cobrir o prejuízo dos fundos. A rentabilidade divulgada não é líquida de impostos."
+    }
+}

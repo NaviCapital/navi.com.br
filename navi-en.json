@@ -1,0 +1,35 @@
+{
+    "menu" : {
+        "about": "Home",
+        "team": "Team",
+        "contact": "Contact Us"
+    },
+    "slogan": "INVESTING IN GOOD IDEAS",
+    "home": {
+        "title": "Welcome to the Navi way of investing",
+        "subtitle": "Our name comes from “navigate”, the act of moving towards a specific direction with strategy and safety.",
+        "paragraph_1": "We founded Navi in 2018, after working together as a team for nine years. We developed a unique investment process and culture, focused on the Brazilian equities.",
+        "paragraph_2": "Navi is a young company obsessed with studying, analyzing and learning. We select the best medium and long-term investments by leveraging the accumulated investment knowledge of our experienced team. We preserve and potentialize capital, improving through the darwinism of ideas – discussing ideas until only the best arguments survive and become investments.",
+        "paragraph_3": "We study and discuss investment strategies all day without hierarchy. By collaborating, we increase our chances of delivering the best risk-adjusted returns to our clients. Consequentially, our success-driven culture is always evolving.",
+        "button": "WHO WE ARE"
+    },
+    "team": {
+        "title": "Team",
+        "subtitle": "Our team is young and full of energy, with the focus and drive to achieve outstanding results.",
+        "paragraph_1": "We follow up on all available information. We roll up the sleeves and perform extensive field work. We travel thousands of miles to get information directly from the primary source. Our work life is not spent in front of a computer.",
+        "paragraph_2": "At the Navi Capital, studying was a passion that became our business model. We are hungry for knowledge, analyzing the news from the moment we wake up. The markets are always in flux, and in response, we are constantly reassessing our views and opinions. Every day, we strive to enhance and refine our knowledge. And the next day, we do it all over again.",
+        "department_1": "Management",
+        "department_2": "Analysis",
+        "department_3": "Operations",
+        "department_4": "IR and Marketing",
+        "department_5": "Data Science"
+    },
+    "contact": {
+        "title": "Contact us",
+        "rj_street": "Av. Ataulfo de Paiva 1100, 6th floor",
+        "sp_street": "Rua Elvira Ferraz 250, room 305",
+        "rj": "Rio de Janeiro, RJ - Brazil",
+        "sp": "São Paulo, SP - Brazil",
+        "disclaimer": "Navi Capital Administradora e Gestora de Recursos Financeiros Ltda does not make any representation or warranty, express or implied, as to the accuracy or completeness, nor does Navi Capital recommend that the information serve as the basis of any investment decision. The report has been provided to you solely for information purposes and does not constitute a current or past recommendation or an offer or solicitation of an offer, or any advice or recommendation, to purchase any securities or other financial instruments, and may not be construed as such. Past performance is not a guarantee of future performance. There can be no assurance that an investment strategy will be successful. Historic market trends are not reliable indicators of actual future market behavior or future performance of any particular investment which may differ materially and should not be relied upon as such. Nothing contained herein constitutes investment, legal, tax or other advice nor is it to be relied on in making an investment or other decision. The investment strategy and themes discussed herein may be unsuitable for investors depending on their specific investment objectives and financial situation. Please note that changes in the rate of exchange of a currency may affect the value, price or income of an investment adversely. No representation or warranty, express or implied, is made or given by or on behalf of Navi Capital or any other person as to the accuracy and completeness or fairness of the information contained in this report, and no responsibility or liability is accepted for any such information."
+    }
+}
