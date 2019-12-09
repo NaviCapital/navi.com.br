@@ -154,6 +154,24 @@ img::-moz-selection {
   color: #212529;
 }
 
+#mainNav .navbar-nav>li.nav-item>a.nav-link-sp {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 0.5rem;
+}
+
+.fa-nav-icon {
+  font-size: 1.2rem;
+  color: #212529;
+}
+
+#mainNav.navbar-shrink .navbar-nav>li.nav-item>.nav-icon-div>a:hover>.fa-nav-icon,
+#mainNav.navbar-shrink .navbar-nav>li.nav-item>.nav-icon-div>a:focus:hover>.fa-nav-icon {
+  font-size: 1.2rem;
+  color: #f1725e;
+}
+
 #mainNav .navbar-nav > li.nav-item > a.nav-link:hover,
 #mainNav .navbar-nav > li.nav-item > a.nav-link:focus:hover {
   color: #f1725e;
@@ -184,6 +202,12 @@ img::-moz-selection {
   #mainNav .navbar-nav > li.nav-item > a.nav-link {
     padding: 0.5rem 1rem;
   }
+  #mainNav .navbar-nav > li.nav-item > a.nav-link-sp {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 1rem;
+    padding-right: 0.5rem;
+  }
   #mainNav .navbar-nav > li.nav-item > a.nav-link,
   #mainNav .navbar-nav > li.nav-item > a.nav-link:focus {
     color: rgba(255, 255, 255, 1);
@@ -210,6 +234,23 @@ img::-moz-selection {
   #mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link:focus:hover {
     color: #f1725e;
   }
+  
+  #mainNav .navbar-nav>li.nav-item>.nav-icon-div>a .fa-nav-icon {
+    font-size: 1.2rem;
+    color: white;
+  }
+
+  #mainNav.navbar-shrink .navbar-nav>li.nav-item>.nav-icon-div>a>.fa-nav-icon {
+    font-size: 1.2rem;
+    color: #212529;
+  }
+
+  #mainNav.navbar-shrink .navbar-nav>li.nav-item>.nav-icon-div>a:hover>.fa-nav-icon,
+  #mainNav.navbar-shrink .navbar-nav>li.nav-item>.nav-icon-div>a:focus:hover>.fa-nav-icon {
+    font-size: 1.2rem;
+    color: #f1725e;
+  }
+
 }
 
 header {
@@ -466,4 +507,11 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
+}
+
+
+.nav-icon-div {
+  width: 1.2rem;
+  height: 1.2rem;
+  padding-right: 1.5rem;
 }
