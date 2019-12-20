@@ -57,6 +57,8 @@
       gtag('config', 'UA-144099195-1');
     </script>
 
+    <!-- Captcha -->
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
   </head>
 
   <body id="page-top">
@@ -84,19 +86,8 @@
             <li class="nav-item pt-only">
               <a class="nav-link" href="#" data-toggle="modal" data-target=".modal-cotas">Cotas e Rentabilidade</a>
             </li>            
-            <li class="nav-item row align-items-baseline">
-              <a class="nav-link nav-link-sp js-scroll-trigger" href="#contact" data-localize="menu.contact"></a>
-              <div class="nav-icon-div">
-                <a href="https://www.instagram.com/navicapital/" target="_blank">
-                  <i class="fa fa-instagram fa-nav-icon"></i>
-                </a>
-              </div>
-              <div class="nav-icon-div">
-                <a href="https://www.linkedin.com/company/navicapital/?originalSubdomain=pt"
-                  target="_blank">
-                  <i class="fa fa-linkedin-in fa-nav-icon"></i>
-                </a>
-              </div>
+            <li class="nav-item">
+              <a class="nav-link nav-link js-scroll-trigger" href="#contact" data-localize="menu.contact"></a>
             </li>
             <li class="nav-item">
               <a class="nav-link"></a>
@@ -108,6 +99,21 @@
               <a class="nav-link" style="padding-right: 0.3rem;" onclick='$("[data-localize]").localize("navi", { language: "pt" }); $(".pt-only").show();' href="javascript:void(0);">PT</a>
               <a class="nav-link" style="padding-right: 0;padding-left: 0;">|</a>
               <a class="nav-link" style="padding-left: 0.3rem;" onclick='$("[data-localize]").localize("navi", { language: "en" }); $(".pt-only").hide();' href="javascript:void(0);">EN</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link"></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link"></a>
+            </li>
+            <li class="nav-item" style="display: inline-flex;">
+              <a class="nav-link" style="padding-right: 0.3rem;" href="https://www.instagram.com/navicapital/" target="_blank">
+                <i class="fa fa-instagram fa-nav-icon"></i>
+              </a>
+              <a class="nav-link" style="padding-right: 0; padding-left: 0;">|</a>
+              <a class="nav-link" style="padding-left: 0.3rem;" href="https://www.linkedin.com/company/navicapital/?originalSubdomain=pt" target="_blank">
+                <i class="fa fa-linkedin-in fa-nav-icon"></i>
+              </a>
             </li>
           </ul>
         </div>
@@ -134,7 +140,7 @@
 			</div>
 		</div>
     </header>
-
+    
     <section class="bg-primary section-Company" id="about">
       <div class="container">
         <div class="row">
@@ -245,7 +251,6 @@
     <section class="p-0 bg-dark pt-only">
       <div class="container-fluid p-0">
         <div class="row no-gutters">
-
           <div class="col-lg-3 col-sm-6">
             <a class="portfolio-box" href="#" data-toggle="modal" data-target=".modal-ls">
               <img class="img-fluid" src="img/portfolio/thumbnails/1.jpg" alt="">
@@ -261,7 +266,6 @@
               </div>
             </a>
           </div>
-
           <div class="col-lg-3 col-sm-6">
             <a class="portfolio-box" href="#" data-toggle="modal" data-target=".modal-lb">
               <img class="img-fluid" src="img/portfolio/thumbnails/2.jpg" alt="">
@@ -277,7 +281,6 @@
               </div>
             </a>
           </div>
-
           <div class="col-lg-3 col-sm-6">
             <a class="portfolio-box" href="#" data-toggle="modal" data-target=".modal-lo">
               <img class="img-fluid" src="img/portfolio/thumbnails/3.jpg" alt="">
@@ -293,7 +296,6 @@
               </div>
             </a>
           </div>
-
           <div class="col-lg-3 col-sm-6">
             <a class="portfolio-box" href="#" data-toggle="modal" data-target=".modal-prev">
               <img class="img-fluid" src="img/portfolio/thumbnails/7.jpg" alt="">
@@ -309,7 +311,6 @@
               </div>
             </a>
           </div>
-
         </div>
       </div>      
       <div class="container-fluid text-white text-center">
@@ -413,7 +414,7 @@
 
       </div>
     </section>
-
+    
     <section id="contact" class="section-Contato">
       <div class="container">
         <div class="row">
@@ -463,6 +464,65 @@
       </div>
     </section>
 
+    <section class="bg-primary text-white pb-2 section-Portfolio" id="form">
+      <div id="accordion">
+        <div class="container">
+          <div class="" id="headingOne">
+            <h5 class="mb-0">
+              <div class="row collapsed" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                <div class="col-lg-6 mx-auto text-center">
+                  <h2 class="section-heading text-white mb-0" data-localize="form.title"></h2>
+                  <div class="collapse-arrow">
+                    <i class="fas fa-chevron-down fa-2x"></i>
+                  </div>
+                  <div class="collapse-hr">
+                    <hr class="light my-4">
+                  </div>
+                </div>
+              </div>
+            </h5>
+          </div>
+          <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+            <div class="row">
+              <div class="col-lg-6 mx-auto">
+                <form action="https://formspree.io/moqvbede" method="POST">
+                  <div class="form-group">
+                    <input type="hidden" name="_next" value="https://www.navi.com.br/thanks.html" />
+                    <div class="row">
+                      <div class="col">
+                        <label for="exampleInputEmail1" data-localize="form.name">Name</label>
+                        <input class="form-control form-control-navi" type="text" name="name">
+                      </div>
+                      <div class="col">
+                        <label for="exampleInputEmail1" data-localize="form.company">Company</label>
+                        <input class="form-control form-control-navi" type="text" name="company">
+                        <input class="form-control" type="hidden" name="language"
+                          data-localize="form.language"></input>
+                      </div>
+                    </div>
+                    <div class="row mt-2">
+                      <div class="col">
+                        <label for="exampleInputEmail1">Email</label>
+                        <input class="form-control form-control-navi" type="email" name="_replyto">
+                      </div>
+                    </div>
+                    <div class="row mt-3">
+                      <div class="col">
+                        <div class="g-recaptcha" data-sitekey="6LeiHccUAAAAAGTWVmm-hvfGDKEArpdogsthaQ1e"></div>
+                      </div>
+                      <div class="col text-right">
+                        <button class="btn btn-light btn-x2 js-scroll-trigger mt-3" type="submit"
+                          data-localize="form.send"></button>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <section id="disclaimer" style="border-top: 1px solid lightgray;">
       <div class="container" style="font-size:15px;">

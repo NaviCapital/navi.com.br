@@ -164,12 +164,14 @@ img::-moz-selection {
 .fa-nav-icon {
   font-size: 1.2rem;
   color: #212529;
+  padding-top: 0.15rem;
 }
 
-#mainNav.navbar-shrink .navbar-nav>li.nav-item>.nav-icon-div>a:hover>.fa-nav-icon,
-#mainNav.navbar-shrink .navbar-nav>li.nav-item>.nav-icon-div>a:focus:hover>.fa-nav-icon {
+#mainNav.navbar-shrink .navbar-nav>li.nav-item>a:hover>.fa-nav-icon,
+#mainNav.navbar-shrink .navbar-nav>li.nav-item>a:focus:hover>.fa-nav-icon {
   font-size: 1.2rem;
   color: #f1725e;
+  padding-top: 0.15rem;
 }
 
 #mainNav .navbar-nav > li.nav-item > a.nav-link:hover,
@@ -235,20 +237,23 @@ img::-moz-selection {
     color: #f1725e;
   }
   
-  #mainNav .navbar-nav>li.nav-item>.nav-icon-div>a .fa-nav-icon {
+  #mainNav .navbar-nav>li.nav-item>a .fa-nav-icon {
     font-size: 1.2rem;
     color: white;
+    padding-top: 0.15rem;
   }
 
-  #mainNav.navbar-shrink .navbar-nav>li.nav-item>.nav-icon-div>a>.fa-nav-icon {
+  #mainNav.navbar-shrink .navbar-nav>li.nav-item>a>.fa-nav-icon {
     font-size: 1.2rem;
     color: #212529;
+    padding-top: 0.15rem;
   }
 
-  #mainNav.navbar-shrink .navbar-nav>li.nav-item>.nav-icon-div>a:hover>.fa-nav-icon,
-  #mainNav.navbar-shrink .navbar-nav>li.nav-item>.nav-icon-div>a:focus:hover>.fa-nav-icon {
+  #mainNav.navbar-shrink .navbar-nav>li.nav-item>a:hover>.fa-nav-icon,
+  #mainNav.navbar-shrink .navbar-nav>li.nav-item>a:focus:hover>.fa-nav-icon {
     font-size: 1.2rem;
     color: #f1725e;
+    padding-top: 0.15rem;
   }
 
 }
@@ -514,4 +519,25 @@ img {
   width: 1.2rem;
   height: 1.2rem;
   padding-right: 1.5rem;
+}
+
+.nav-icon-a {
+  width: 1.2rem;
+  height: 1.2rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.form-control-navi {
+  border-radius: 2rem;
+}
+
+.collapse-hr,
+.collapsed .collapse-arrow {
+  display: inline;
+}
+
+.collapsed .collapse-hr,
+.collapse-arrow {
+  display: none;
 }
