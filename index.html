@@ -57,6 +57,8 @@
       gtag('config', 'UA-144099195-1');
     </script>
 
+    <!-- Captcha -->
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
   </head>
 
   <body id="page-top">
@@ -85,7 +87,7 @@
               <a class="nav-link" href="#" data-toggle="modal" data-target=".modal-cotas">Cotas e Rentabilidade</a>
             </li>            
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#contact" data-localize="menu.contact"></a>
+              <a class="nav-link nav-link js-scroll-trigger" href="#contact" data-localize="menu.contact"></a>
             </li>
             <li class="nav-item">
               <a class="nav-link"></a>
@@ -97,6 +99,21 @@
               <a class="nav-link" style="padding-right: 0.3rem;" onclick='$("[data-localize]").localize("navi", { language: "pt" }); $(".pt-only").show();' href="javascript:void(0);">PT</a>
               <a class="nav-link" style="padding-right: 0;padding-left: 0;">|</a>
               <a class="nav-link" style="padding-left: 0.3rem;" onclick='$("[data-localize]").localize("navi", { language: "en" }); $(".pt-only").hide();' href="javascript:void(0);">EN</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link"></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link"></a>
+            </li>
+            <li class="nav-item" style="display: inline-flex;">
+              <a class="nav-link" style="padding-right: 0.3rem;" href="https://www.instagram.com/navicapital/" target="_blank">
+                <i class="fa fa-instagram fa-nav-icon"></i>
+              </a>
+              <a class="nav-link" style="padding-right: 0; padding-left: 0;">|</a>
+              <a class="nav-link" style="padding-left: 0.3rem;" href="https://www.linkedin.com/company/navicapital/?originalSubdomain=pt" target="_blank">
+                <i class="fa fa-linkedin-in fa-nav-icon"></i>
+              </a>
             </li>
           </ul>
         </div>
@@ -123,7 +140,7 @@
 			</div>
 		</div>
     </header>
-
+    
     <section class="bg-primary section-Company" id="about">
       <div class="container">
         <div class="row">
@@ -234,7 +251,6 @@
     <section class="p-0 bg-dark pt-only">
       <div class="container-fluid p-0">
         <div class="row no-gutters">
-
           <div class="col-lg-3 col-sm-6">
             <a class="portfolio-box" href="#" data-toggle="modal" data-target=".modal-ls">
               <img class="img-fluid" src="img/portfolio/thumbnails/1.jpg" alt="">
@@ -250,7 +266,6 @@
               </div>
             </a>
           </div>
-
           <div class="col-lg-3 col-sm-6">
             <a class="portfolio-box" href="#" data-toggle="modal" data-target=".modal-lb">
               <img class="img-fluid" src="img/portfolio/thumbnails/2.jpg" alt="">
@@ -266,7 +281,6 @@
               </div>
             </a>
           </div>
-
           <div class="col-lg-3 col-sm-6">
             <a class="portfolio-box" href="#" data-toggle="modal" data-target=".modal-lo">
               <img class="img-fluid" src="img/portfolio/thumbnails/3.jpg" alt="">
@@ -282,7 +296,6 @@
               </div>
             </a>
           </div>
-
           <div class="col-lg-3 col-sm-6">
             <a class="portfolio-box" href="#" data-toggle="modal" data-target=".modal-prev">
               <img class="img-fluid" src="img/portfolio/thumbnails/7.jpg" alt="">
@@ -298,7 +311,6 @@
               </div>
             </a>
           </div>
-
         </div>
       </div>      
       <div class="container-fluid text-white text-center">
@@ -402,7 +414,7 @@
 
       </div>
     </section>
-
+    
     <section id="contact" class="section-Contato">
       <div class="container">
         <div class="row">
@@ -442,7 +454,7 @@
               <p>Linkedin</p>
             </a>
           </div>
-		  <div class="col-lg-3 mr-auto text-center">
+		      <div class="col-lg-3 mr-auto text-center">
             <a href="https://www.instagram.com/navicapital/" target="_blank">
               <i class="fa fa-instagram fa-3x mb-3 sr-contact"></i>
               <p>Instagram</p>
@@ -452,6 +464,65 @@
       </div>
     </section>
 
+    <section class="bg-primary text-white pb-2 section-Portfolio" id="form">
+      <div id="accordion">
+        <div class="container">
+          <div class="" id="headingOne">
+            <h5 class="mb-0">
+              <div class="row collapsed" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                <div class="col-lg-6 mx-auto text-center">
+                  <h2 class="section-heading text-white mb-0" data-localize="form.title"></h2>
+                  <div class="collapse-arrow">
+                    <i class="fas fa-chevron-down fa-2x"></i>
+                  </div>
+                  <div class="collapse-hr">
+                    <hr class="light my-4">
+                  </div>
+                </div>
+              </div>
+            </h5>
+          </div>
+          <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+            <div class="row">
+              <div class="col-lg-6 mx-auto">
+                <form action="https://formspree.io/moqvbede" method="POST">
+                  <div class="form-group">
+                    <input type="hidden" name="_next" value="https://www.navi.com.br/thanks.html" />
+                    <div class="row">
+                      <div class="col">
+                        <label for="exampleInputEmail1" data-localize="form.name">Name</label>
+                        <input class="form-control form-control-navi" type="text" name="name">
+                      </div>
+                      <div class="col">
+                        <label for="exampleInputEmail1" data-localize="form.company">Company</label>
+                        <input class="form-control form-control-navi" type="text" name="company">
+                        <input class="form-control" type="hidden" name="language"
+                          data-localize="form.language"></input>
+                      </div>
+                    </div>
+                    <div class="row mt-2">
+                      <div class="col">
+                        <label for="exampleInputEmail1">Email</label>
+                        <input class="form-control form-control-navi" type="email" name="_replyto">
+                      </div>
+                    </div>
+                    <div class="row mt-3">
+                      <div class="col">
+                        <div class="g-recaptcha" data-sitekey="6LeiHccUAAAAAGTWVmm-hvfGDKEArpdogsthaQ1e"></div>
+                      </div>
+                      <div class="col text-right">
+                        <button class="btn btn-light btn-x2 js-scroll-trigger mt-3" type="submit"
+                          data-localize="form.send"></button>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <section id="disclaimer" style="border-top: 1px solid lightgray;">
       <div class="container" style="font-size:15px;">
@@ -569,18 +640,18 @@
                 <tbody>
                   <tr>
                     <td>Fundo</td>
-                    <td>198,69%	</td>
-                    <td>39,82%	</td>
-                    <td>24,47%	</td>
-                    <td>8,28%	</td>
-                    <td>R$ 912M</td>
+                    <td>205,10%	</td>
+                    <td>41,38%	</td>
+                    <td>25,72%	</td>
+                    <td>9,45%	</td>
+                    <td>R$ 909M</td>
                   </tr>
                   <tr>
                     <td>CDI</td>
-                    <td>136,98%	</td>
-                    <td>24,91%	</td>
-                    <td>12,95%	</td>
-                    <td>6,09%	</td>
+                    <td>137,86%	</td>
+                    <td>23,99%	</td>
+                    <td>12,77%	</td>
+                    <td>5,96%	</td>
                     <td>-</td>
                   </tr>
                 </tbody>
@@ -589,7 +660,7 @@
             <div class="row">
               <div class="col-lg-8">
                 <img src="img/graficos/graficoLS.png" alt="" class="">
-                <p>Dados de 29/11/2019 e início do fundo em 29/09/2010.</p>
+                <p>Dados de 31/12/2019 e início do fundo em 29/09/2010.</p>
               </div>
               <div class="col-lg-4">
                 <p>
@@ -655,18 +726,18 @@
                   <tbody>
                     <tr>
                       <td>Fundo</td>
-                      <td>98,69%</td>
-                      <td>-</td>
-                      <td>66,46%</td>
-                      <td>21,98%</td>
-                      <td>R$ 744M</td>
+                      <td>113,52%</td>
+                      <td>112,08%</td>
+                      <td>72,60%</td>
+                      <td>29,84%</td>
+                      <td>R$ 893M</td>
                     </tr>
                     <tr>
                       <td>IMA-B</td>
-                      <td>55,27%</td>
-                      <td>-</td>
-                      <td>37,40%</td>
-                      <td>22,52%</td>
+                      <td>58,39%</td>
+                      <td>56,79%</td>
+                      <td>39,01%</td>
+                      <td>22,95%</td>
                       <td>-</td>
                     </tr>
                   </tbody>
@@ -675,7 +746,7 @@
               <div class="row">
                 <div class="col-lg-8">
                   <img src="img/graficos/graficoLB.png" alt="" class="">
-                  <p>Dados de 29/11/2019 e início do fundo em 27/12/2016.</p>
+                  <p>Dados de 31/12/2019 e início do fundo em 27/12/2016.</p>
                 </div>
                 <div class="col-lg-4">
                   <p>
@@ -742,18 +813,18 @@
                   <tbody>
                     <tr>
                       <td>Fundo</td>
-                      <td>37,12%</td>
+                      <td>39,45%</td>
                       <td>-</td>
-                      <td>30,07%</td>
-                      <td>12,35%</td>
-                      <td>R$ 94M</td>
+                      <td>31,61%</td>
+                      <td>12,52%</td>
+                      <td>R$ 95M</td>
                     </tr>
                     <tr>
                       <td>CDI</td>
-                      <td>18,30%</td>
+                      <td>18,75%</td>
                       <td>-</td>
-                      <td>12,95%</td>
-                      <td>6,09%</td>
+                      <td>12,77%</td>
+                      <td>5,96%</td>
                       <td>-</td>
                     </tr>
                   </tbody>
@@ -762,7 +833,7 @@
               <div class="row">
                 <div class="col-lg-8">
                   <img src="img/graficos/graficoPrev.png" alt="" class="">
-                  <p>Dados de 29/11/2019 e início do fundo em 18/05/2017.</p>
+                  <p>Dados de 31/12/2019 e início do fundo em 18/05/2017.</p>
                 </div>
                 <div class="col-lg-4">
                   <p>
@@ -825,18 +896,18 @@
                   <tbody>
                     <tr>
                       <td>Fundo</td>
-                      <td>225,82%</td>
-                      <td>116,85%</td>
-                      <td>80,36%</td>
-					  <td>29,51%</td>
-                      <td>R$ 1.120M</td>
+                      <td>261,55%</td>
+                      <td>139,93%</td>
+                      <td>89,46%</td>
+					  <td>41,32%</td>
+                      <td>R$ 1.214M</td>
                     </tr>
                     <tr>
                       <td>Ibovespa</td>
-                      <td>139,88%</td>
-					  <td>74,83%</td>
-                      <td>50,38%</td>
-					  <td>20,93%</td>
+                      <td>166,77%</td>
+					  <td>92,01%</td>
+                      <td>51,36%</td>
+					  <td>31,58%</td>
                       <td>-</td>
                     </tr>
                   </tbody>
@@ -845,7 +916,7 @@
               <div class="row">
                 <div class="col-lg-8">
                   <img src="img/graficos/graficoLO.png" alt="" class="">
-                  <p>Dados de 29/11/2019 e início do fundo em 30/09/2011.</p>
+                  <p>Dados de 31/12/2019 e início do fundo em 30/09/2011.</p>
                 </div>
                 <div class="col-lg-4">
                   <p>

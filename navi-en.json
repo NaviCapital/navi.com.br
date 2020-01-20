@@ -31,5 +31,12 @@
         "rj": "Rio de Janeiro, RJ - Brazil",
         "sp": "São Paulo, SP - Brazil",
         "disclaimer": "Navi Capital Administradora e Gestora de Recursos Financeiros Ltda does not make any representation or warranty, express or implied, as to the accuracy or completeness, nor does Navi Capital recommend that the information serve as the basis of any investment decision. The report has been provided to you solely for information purposes and does not constitute a current or past recommendation or an offer or solicitation of an offer, or any advice or recommendation, to purchase any securities or other financial instruments, and may not be construed as such. Past performance is not a guarantee of future performance. There can be no assurance that an investment strategy will be successful. Historic market trends are not reliable indicators of actual future market behavior or future performance of any particular investment which may differ materially and should not be relied upon as such. Nothing contained herein constitutes investment, legal, tax or other advice nor is it to be relied on in making an investment or other decision. The investment strategy and themes discussed herein may be unsuitable for investors depending on their specific investment objectives and financial situation. Please note that changes in the rate of exchange of a currency may affect the value, price or income of an investment adversely. No representation or warranty, express or implied, is made or given by or on behalf of Navi Capital or any other person as to the accuracy and completeness or fairness of the information contained in this report, and no responsibility or liability is accepted for any such information."
+    },
+    "form": {
+        "title": "Sign up to our newsletter",
+        "name": "Name",
+        "company": "Company",
+        "send": "Send",
+        "language": "english"
     }
 }
