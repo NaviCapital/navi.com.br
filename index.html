@@ -1,961 +1,1047 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 
-  <head>
-    <!-- SUPER NOVO -->
-    <meta http-equiv="Content-Language" content="pt-br">
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
+<head>
+  <!-- SUPER NOVO -->
+  <meta http-equiv="Content-Language" content="pt-br">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
 
-    <title>Navi Capital</title>
+  <title>Navi Capital</title>
 
-    <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="shortcut icon" href="img/navi48.ico">
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="shortcut icon" href="img/navi48.ico">
 
-    <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-    <!-- Plugin CSS -->
-    <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
+  <!-- Plugin CSS -->
+  <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
 
-    <!-- Custom styles for this template -->    
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" type="text/css" href="css/MyFontsWebfontsKit.css">
-    <link rel="stylesheet" type="text/css" href="css/creative.css">    
-    <link rel="stylesheet" type="text/css" href="flags/flag.css">
+  <!-- Custom styles for this template -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" type="text/css" href="css/MyFontsWebfontsKit.css">
+  <link rel="stylesheet" type="text/css" href="css/creative.css">
+  <link rel="stylesheet" type="text/css" href="flags/flag.css">
 
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-	  
-    <!-- Facebook Pixel Code -->
-    <script>
-        !function(f,b,e,v,n,t,s)
-        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-        n.queue=[];t=b.createElement(e);t.async=!0;
-        t.src=v;s=b.getElementsByTagName(e)[0];
-        s.parentNode.insertBefore(t,s)}(window, document,'script',
-        'https://connect.facebook.net/en_US/fbevents.js');
-        fbq('init', '2515935148637688');
-        fbq('track', 'PageView');
-    </script>
-    <noscript><img height="1" width="1" style="display:none"
-        src="https://www.facebook.com/tr?id=2515935148637688&ev=PageView&noscript=1"
-    /></noscript>
-    <!-- End Facebook Pixel Code -->
+  <!-- Global site tag (gtag.js) - Google Analytics -->
 
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-144099195-1"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'UA-144099195-1');
-    </script>
+  <!-- Facebook Pixel Code -->
+  <script>
+    ! function (f, b, e, v, n, t, s) {
+      if (f.fbq) return;
+      n = f.fbq = function () {
+        n.callMethod ?
+          n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+      };
+      if (!f._fbq) f._fbq = n;
+      n.push = n;
+      n.loaded = !0;
+      n.version = '2.0';
+      n.queue = [];
+      t = b.createElement(e);
+      t.async = !0;
+      t.src = v;
+      s = b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t, s)
+    }(window, document, 'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '2515935148637688');
+    fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+      src="https://www.facebook.com/tr?id=2515935148637688&ev=PageView&noscript=1" /></noscript>
+  <!-- End Facebook Pixel Code -->
 
-    <!-- Captcha -->
-    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-  </head>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-144099195-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
 
-  <body id="page-top">
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+    gtag('config', 'UA-144099195-1');
+  </script>
 
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
-      <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top">
-          <img src="img/logo_salmao_pequeno.png" alt="" style="height: 30px;" />
-        </a>
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#about" data-localize="menu.about"></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#services" data-localize="menu.team"></a>
-            </li>
-            <li class="nav-item pt-only">
-              <a class="nav-link js-scroll-trigger" href="#portfolio">Produtos</a>
-            </li>
-            <li class="nav-item pt-only">
-              <a class="nav-link" href="#" data-toggle="modal" data-target=".modal-cotas">Cotas e Rentabilidade</a>
-            </li>            
-            <li class="nav-item">
-              <a class="nav-link nav-link js-scroll-trigger" href="#contact" data-localize="menu.contact"></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link"></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link"></a>
-            </li>
-            <li class="nav-item" style="display: inline-flex;">
-              <a class="nav-link" style="padding-right: 0.3rem;" onclick='$("[data-localize]").localize("navi", { language: "pt" }); $(".pt-only").show();' href="javascript:void(0);">PT</a>
-              <a class="nav-link" style="padding-right: 0;padding-left: 0;">|</a>
-              <a class="nav-link" style="padding-left: 0.3rem;" onclick='$("[data-localize]").localize("navi", { language: "en" }); $(".pt-only").hide();' href="javascript:void(0);">EN</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link"></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link"></a>
-            </li>
-            <li class="nav-item" style="display: inline-flex;">
-              <a class="nav-link" style="padding-right: 0.3rem;" href="https://www.instagram.com/navicapital/" target="_blank">
-                <i class="fa fa-instagram fa-nav-icon"></i>
-              </a>
-              <a class="nav-link" style="padding-right: 0; padding-left: 0;">|</a>
-              <a class="nav-link" style="padding-left: 0.3rem;" href="https://www.linkedin.com/company/navicapital/?originalSubdomain=pt" target="_blank">
-                <i class="fa fa-linkedin-in fa-nav-icon"></i>
-              </a>
-            </li>
-          </ul>
+  <!-- Captcha -->
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+</head>
+
+<body id="page-top">
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">
+        <img src="img/logo_salmao_pequeno.png" alt="" style="height: 30px;" />
+      </a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+        data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#about" data-localize="menu.about"></a>
+          </li>
+          <li class="nav-item pt-only">
+            <a class="nav-link js-scroll-trigger" href="#portfolio">Produtos</a>
+          </li>
+          <li class="nav-item pt-only">
+            <a class="nav-link" href="#" data-toggle="modal" data-target=".modal-cotas">Cotas e Rentabilidade</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-link js-scroll-trigger" href="#contact" data-localize="menu.contact"></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link"></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link"></a>
+          </li>
+          <li class="nav-item" style="display: inline-flex;">
+            <a class="nav-link" style="padding-right: 0.3rem;"
+              onclick='$("[data-localize]").localize("navi", { language: "pt" }); $(".pt-only").show(); language="pt";'
+              href="javascript:void(0);">PT</a>
+            <a class="nav-link" style="padding-right: 0;padding-left: 0;">|</a>
+            <a class="nav-link" style="padding-left: 0.3rem;"
+              onclick='$("[data-localize]").localize("navi", { language: "en" }); $(".pt-only").hide(); language="en";'
+              href="javascript:void(0);">EN</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link"></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link"></a>
+          </li>
+          <li class="nav-item" style="display: inline-flex;">
+            <a class="nav-link" style="padding-right: 0.3rem;" href="https://www.instagram.com/navicapital/"
+              target="_blank">
+              <i class="fa fa-instagram fa-nav-icon"></i>
+            </a>
+            <a class="nav-link" style="padding-right: 0; padding-left: 0;">|</a>
+            <a class="nav-link" style="padding-left: 0.3rem;"
+              href="https://www.linkedin.com/company/navicapital/?originalSubdomain=pt" target="_blank">
+              <i class="fa fa-linkedin-in fa-nav-icon"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header class="masthead text-center text-white d-flex">
+    <div class="overlay">
+    </div>
+    <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+      <source src="video/Planodefundo.mp4" type="video/mp4">
+    </video>
+    <div class="container my-auto">
+      <div class="row">
+        <div class="col-lg-10 mx-auto">
+          <h1 class="text-uppercase">
+            <strong data-localize="slogan"></strong>
+          </h1>
+          <hr>
+        </div>
+        <div class="col-lg-8 mx-auto pt-only">
+          <a class="btn btn-primary btn-xl"
+            href="https://navicapitalgestao.orama.com.br/novo-cadastro/novo-cliente/3810">Invista Aqui</a>
         </div>
       </div>
-    </nav>
+    </div>
+  </header>
 
-    <header class="masthead text-center text-white d-flex">
-		<div class="overlay">
-		</div>
-		<video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
-			<source src="video/Planodefundo.mp4" type="video/mp4">
-		</video>
-		<div class="container my-auto">
-			<div class="row">
-			  <div class="col-lg-10 mx-auto">
-				<h1 class="text-uppercase">
-				  <strong data-localize="slogan"></strong>
-				</h1>
-				<hr>
-			  </div>
-			  <div class="col-lg-8 mx-auto pt-only">
-				<a class="btn btn-primary btn-xl" href="https://navicapitalgestao.orama.com.br/novo-cadastro/novo-cliente/3810">Invista Aqui</a>
-			  </div>
-			</div>
-		</div>
-    </header>
-    
-    <section class="bg-primary section-Company" id="about">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-8 mx-auto text-center">
-            <h2 class="section-heading text-white" data-localize="home.title"></h2>
-            <hr class="light my-4">
-            <h3 class="section-heading text-white" data-localize="home.subtitle"></h3>
-            <div class="text-Company">
+  <section class="bg-primary section-Company" id="about">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 mx-auto text-center">
+          <h2 class="section-heading text-white" data-localize="home.title"></h2>
+          <hr class="light my-4">
+          <h3 class="section-heading text-white" data-localize="home.subtitle"></h3>
+          <div class="text-Company">
             <p class="text-faded mb-4" data-localize="home.paragraph_1"></p>
             <p class="text-faded mb-4" data-localize="home.paragraph_2"></p>
-            <p class="text-faded mb-4" data-localize="home.paragraph_3"></p>            
-            </div>
-            <a class="btn btn-light btn-xl js-scroll-trigger mt-3" href="#services" data-localize="home.button"></a>
+            <p class="text-faded mb-4" data-localize="home.paragraph_3"></p>
           </div>
+          <a class="btn btn-light btn-xl js-scroll-trigger mt-3" href="#services" data-localize="home.button"></a>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section id="services" class="section-Team">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12 text-center">
-            <h2 class="section-heading" data-localize="team.title"></h2>
-            <hr class="my-4"> 
-            <h3 data-localize="team.subtitle"></h3>                                     
-            <div class="text-Team">
-              <p class="mb-4" data-localize="team.paragraph_1"></p>  
-              <p  class="mb-4" data-localize="team.paragraph_2"></p>
-            </div>
+  <section id="services" class="section-Team">
+    <div class="container">
+      <div class="row justify-content-between">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading" data-localize="team.title"></h2>
+          <hr class="my-4">
+          <h3 data-localize="team.subtitle"></h3>
+          <div class="text-Team">
+            <p class="mb-4" data-localize="team.paragraph_1"></p>
+            <p class="mb-4" data-localize="team.paragraph_2"></p>
           </div>
         </div>
       </div>
-      <div class="container">
-        <div class="row">
-          <div class="col-md-1 text-center"> </div>
-          <div class="col-md-2 text-center">
-            <div class="service-box mt-5 mx-auto">
-              <i class="fas fa-4x fa-hand-holding-usd text-primary mb-3 sr-icons"></i>
-              <h3 class="mb-3" data-localize="team.department_1"></h3>
-			  <p><a class="text-muted mb-2" target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/adam-matos-silveira-352854bb/">Adam Matos</a></p>
-              <p><a class="text-muted mb-2" target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/felipe-campos-99a06015/">Felipe Campos</a></p>
-              <p><a class="text-muted mb-2" target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/felipetaylor/">Felipe Taylor</a></p>
-              <p><a class="text-muted mb-2" target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/waldir-serafim-filho-57915120/">Waldir Serafim</a></p>              
-            </div>
-          </div>
-          <div class="col-md-2 text-center">
-            <div class="service-box mt-5 mx-auto">
-              <i class="fa fa-4x fa-chart-area text-primary mb-3 sr-icons"></i>
-              <h3 class="mb-3" data-localize="team.department_2"></h3>
-              <p><a class="text-muted mb-2" target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/alexandre-crespo-193686122/">Alexandre Crespo</a></p>
-			  <p><a class="text-muted mb-2" target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/guilherme-sadahiro/">Guilherme Sadahiro</a></p>
-			  <p><a class="text-muted mb-2" target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/gustavo-lima-bbb515147/">Gustavo Lima</a></p>
-              <p><a class="text-muted mb-2" target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/jorge-dantas-neto-cfa-618a5497/">Jorge Dantas</a></p>
-              <p><a class="text-muted mb-2" target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/luisa-carneiro-alves-souto-20569048/">Luisa Souto</a></p>
-              <p><a class="text-muted mb-2" target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/matheus-amorim-8795b351/">Matheus Amorim</a></p>               
-              <p><a class="text-muted mb-2" target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/raphael-ornellas-81607949/">Raphael Ornellas</a></p>               
-            </div>
-          </div>
-          <div class="col-md-2 text-center">
-            <div class="service-box mt-5 mx-auto">
-              <i class="fa fa-4x fa-cogs text-primary mb-3 sr-icons"></i>
-              <h3 class="mb-3" data-localize="team.department_3"></h3>
-              <p><a class="text-muted mb-2" target="_blank" rel="noopener noreferrer" href="">Aline Matos</a></p>
-              <p><a class="text-muted mb-2" target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/daniel-lee-moraes-32b32767/">Daniel Lee</a></p>
-              <p><a class="text-muted mb-2" target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/diego-sales-207236116/">Diego Sales</a></p>
-              <p><a class="text-muted mb-2" target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/jo%C3%A3o-paulo-de-aragon-frm-a8558649/">João Aragon</a><br></p>
-              <p><a class="text-muted mb-2" target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/marcelo-freitas-de-araujo-cfa-215151b3/">Marcelo Araujo</a></p> 
-              <p><a class="text-muted mb-2" target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/nicolas-chor-goldenstein-a868a3153/">Nicolas Chor</a></p> 			  
-            </div>
-          </div>
-          <div class="col-md-2 text-center">
-            <div class="service-box mt-5 mx-auto">
-              <i class="fa fa-4x fa-users text-primary mb-3 sr-icons"></i>
-              <h3 class="mb-3" data-localize="team.department_4"></h3>
-              <p><a class="text-muted mb-2" target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/marcella-derze-116a2b73/">Marcella Derze</a><br></p>
-              <p><a class="text-muted mb-2" target="_blank" rel="noopener noreferrer" href="https://br.linkedin.com/in/natasha-brigag%C3%A3o-98078475/">Natasha Brigagão</a><br></p>
-            </div>
-          </div>
-          <div class="col-md-2 text-center">
-            <div class="service-box mt-5 mx-auto">
-              <i class="fa fa-4x fa-database text-primary mb-3 sr-icons"></i>
-              <h3 class="mb-3" data-localize="team.department_5"></h3>
-			  <p><a class="text-muted mb-2" target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/alexia-pimentel-251937105/">Alexia Pimentel</a><br></p>
-              <p><a class="text-muted mb-2" target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/antonio-lobato-50657290/">Antonio Lobato</a><br></p>
-			  <p><a class="text-muted mb-2" target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/carlos-felipe-domingues-e-oliveira-62963290/">Carlos Domingues</a><br></p>
-			  <p><a class="text-muted mb-2" target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/rodrigombs/">Rodrigo Soares</a><br></p>
-            </div>
-          </div>           
-          <div class="col-md-1 text-center"> </div>
+    </div>
+    <div class="container text-center" id="container">
+      <h2 class="section-heading">Sócios</h2>
+      <hr class="my-4">
+      <div class="row justify-content-center">
+        <div class="col-md-auto partners">
+          <a class="btn btn-outline-primary btn-block" data-toggle="modal" data-target="#modalPartner"
+            data-partner="felipecampos" href="#felipecampos">
+            Felipe Campos
+          </a>
+          <a class="btn btn-outline-primary btn-block" data-toggle="modal" data-target="#modalPartner"
+            data-partner="waldirserafim" href="#waldirserafim">
+            Waldir Serafim
+          </a>
+          <a class="btn btn-outline-primary btn-block" data-toggle="modal" data-target="#modalPartner"
+            data-partner="matheusamorim" href="#matheusamorim">
+            Matheus Amorim
+          </a>
+          <a class="btn btn-outline-primary btn-block" data-toggle="modal" data-target="#modalPartner"
+            data-partner="jorgedantas" href="#jorgedantas">
+            Jorge Dantas
+          </a>
         </div>
-        <br>
-        <br>
-        <div class="row pt-only">
-          <div class="col-md-8 mx-auto text-center">
-            <a class="btn btn-primary btn-xl js-scroll-trigger" href="#portfolio">Conheça nossos produtos</a>
-          </div>          
+        <div class="col-md-auto center-partners partners">
+          <a class="btn btn-outline-primary btn-block" data-toggle="modal" data-target="#modalPartner"
+            data-partner="luisasouto" href="#luisasouto">
+            Luisa Souto
+          </a>
+          <a class="btn btn-outline-primary btn-block" data-toggle="modal" data-target="#modalPartner"
+            data-partner="gustavolima" href="#gustavolima">
+            Gustavo Lima
+          </a>
+          <a class="btn btn-outline-primary btn-block" data-toggle="modal" data-target="#modalPartner"
+            data-partner="victorcerqueira" href="#victorcerqueira">
+            Victor Cerqueira
+          </a>
+          <a class="btn btn-outline-primary btn-block" data-toggle="modal" data-target="#modalPartner"
+            data-partner="raphaelornellas" href="#raphaelornellas">
+            Raphael Ornellas
+          </a>
+        </div>
+        <div class="col-md-auto partners">
+          <a class="btn btn-outline-primary btn-block" data-toggle="modal" data-target="#modalPartner"
+            data-partner="marcelladerze" href="#marcelladerze">
+            Marcella Derze
+          </a>
+          <a class="btn btn-outline-primary btn-block" data-toggle="modal" data-target="#modalPartner"
+            data-partner="gustavoribas" href="#gustavoribas">
+            Gustavo Ribas
+          </a>
+          <a class="btn btn-outline-primary btn-block" data-toggle="modal" data-target="#modalPartner"
+            data-partner="joaoaragon" href="#joaoaragon">
+            João Aragon
+          </a>
+          <a class="btn btn-outline-primary btn-block" data-toggle="modal" data-target="#modalPartner"
+            data-partner="marceloaraujo" href="#marceloaraujo">
+            Marcelo Araujo
+          </a>
+        </div>
+      </div>
+    </div>
+    <br>
+    <br>
+    </div>
+    <br>
+  </section>
+
+  <section class="bg-primary text-white pb-2 section-Portfolio pt-only" id="portfolio">
+    <div class="container-fluid text-center">
+      <h2 class="mb-3"><strong>Nossos Produtos</strong></h2>
+    </div>
+  </section>
+
+  <section class="p-0 bg-dark pt-only">
+    <div class="container-fluid p-0">
+      <div class="row no-gutters">
+        <div class="col-lg-3 col-sm-6">
+          <a class="portfolio-box" href="#" data-toggle="modal" data-target=".modal-ls">
+            <img class="img-fluid" src="img/portfolio/thumbnails/1.jpg" alt="">
+            <div class="portfolio-box-caption">
+              <div class="portfolio-box-caption-content">
+                <div class="project-category">
+                  FUNDO
+                </div>
+                <div class="project-name">
+                  <h2><strong>LONG SHORT</strong></h2>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-3 col-sm-6">
+          <a class="portfolio-box" href="#" data-toggle="modal" data-target=".modal-lb">
+            <img class="img-fluid" src="img/portfolio/thumbnails/2.jpg" alt="">
+            <div class="portfolio-box-caption">
+              <div class="portfolio-box-caption-content">
+                <div class="project-category">
+                  FUNDO
+                </div>
+                <div class="project-name">
+                  <h2><strong>LONG BIASED</strong></h2>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-3 col-sm-6">
+          <a class="portfolio-box" href="#" data-toggle="modal" data-target=".modal-lo">
+            <img class="img-fluid" src="img/portfolio/thumbnails/3.jpg" alt="">
+            <div class="portfolio-box-caption">
+              <div class="portfolio-box-caption-content">
+                <div class="project-category">
+                  FUNDO
+                </div>
+                <div class="project-name">
+                  <h2><strong>LONG ONLY</strong></h2>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-3 col-sm-6">
+          <a class="portfolio-box" href="#" data-toggle="modal" data-target=".modal-prev">
+            <img class="img-fluid" src="img/portfolio/thumbnails/7.jpg" alt="">
+            <div class="portfolio-box-caption">
+              <div class="portfolio-box-caption-content">
+                <div class="project-category">
+                  FUNDO
+                </div>
+                <div class="project-name">
+                  <h2><strong>PREV</strong></h2>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid text-white text-center">
+      <br>
+      <h2 class="mb-4">Documentos para download</h2>
+      <div class="row justify-content-center">
+        <div class="col-xl-3 col-md-12 div-Documents">
+          <a class="btn btn-light sr-button" href="files/Formulario%20de%20Referencia.pdf" target="_blank">Formulário de
+            referência
+            <i class="fas fa-file-pdf small text-muted"></i>
+            <i class="fas fa-external-link-alt small text-muted"></i>
+          </a>
+        </div>
+        <div class="col-xl-3 col-md-12 div-Documents">
+          <a class="btn btn-light sr-button" href="files/Politica%20de%20Gestao%20de%20Risco.pdf"
+            target="_blank">Política de Risco
+            <i class="fas fa-file-pdf small text-muted"></i>
+            <i class="fas fa-external-link-alt small text-muted"></i>
+          </a>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-xl-3 col-md-12 div-Documents">
+          <a class="btn btn-light sr-button" href="files/codigo%20de%20etica.pdf" target="_blank">Código de ética
+            <i class="fas fa-file-pdf small text-muted"></i>
+            <i class="fas fa-external-link-alt small text-muted"></i>
+          </a>
+        </div>
+        <div class="col-xl-3 col-md-12 div-Documents">
+          <a class="btn btn-light sr-button" href="files/Politica%20de%20Investimentos%20Pessoais.pdf"
+            target="_blank">Política de Investimentos Pessoais
+            <i class="fas fa-file-pdf small text-muted"></i>
+            <i class="fas fa-external-link-alt small text-muted"></i>
+          </a>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-xl-3 col-md-12 div-Documents">
+          <a class="btn btn-light sr-button" href="files/Politica%20de%20Rateio%20e%20Divisao%20de%20Ordens.pdf"
+            target="_blank">Política de rateio e divisão de ordens
+            <i class="fas fa-file-pdf small text-muted"></i>
+            <i class="fas fa-external-link-alt small text-muted"></i>
+          </a>
+        </div>
+        <div class="col-xl-3 col-md-12 div-Documents">
+          <a class="btn btn-light sr-button" href="files/Prevencao%20a%20Lavagem%20de%20Dinheiro.pdf"
+            target="_blank">Política de PLD
+            <i class="fas fa-file-pdf small text-muted"></i>
+            <i class="fas fa-external-link-alt small text-muted"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="col-xl-3 col-md-12 div-Documents">
+          <a class="btn btn-light sr-button" href="files/Politica%20de%20Controles%20Internos.pdf"
+            target="_blank">Controles internos
+            <i class="fas fa-file-pdf small text-muted"></i>
+            <i class="fas fa-external-link-alt small text-muted"></i>
+          </a>
+        </div>
+        <div class="col-xl-3 col-md-12 div-Documents">
+          <a class="btn btn-light sr-button" href="files/Politica%20de%20Voto.pdf" target="_blank">Política de Voto
+            <i class="fas fa-file-pdf small text-muted"></i>
+            <i class="fas fa-external-link-alt small text-muted"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="col-xl-3 col-md-12 div-Documents">
+          <a class="btn btn-light sr-button"
+            href="files/Politica%20de%20Selecao%20Contratacao%20e%20Monitoramento%20de%20Terceiros.pdf"
+            target="_blank">Contratação de Terceiros
+            <i class="fas fa-file-pdf small text-muted"></i>
+            <i class="fas fa-external-link-alt small text-muted"></i>
+          </a>
+        </div>
+        <div class="col-xl-3 col-md-12 div-Documents">
+          <a class="btn btn-light sr-button"
+            href="files/Politica%20de%20Seguranca%20da%20Informacao%20e%20Seguranca%20Cibernetica.pdf"
+            target="_blank">Segurança da Informação
+            <i class="fas fa-file-pdf small text-muted"></i>
+            <i class="fas fa-external-link-alt small text-muted"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="col-xl-3 col-md-12 div-Documents">
+          <a class="btn btn-light sr-button" href="files/Navi%20Yield%20-%20FormularioReferencia.pdf"
+            target="_blank">FORM. DE REF. NAVI YIELD
+            <i class="fas fa-file-pdf small text-muted"></i>
+            <i class="fas fa-external-link-alt small text-muted"></i>
+          </a>
+        </div>
+        <div class="col-xl-3 col-md-12 div-Documents">
+          <a class="btn btn-light sr-button" href="files/Plano%20de%20Continuidade%20de%20Negocios.pdf"
+            target="_blank">CONTINUIDADE DO NEGÓCIO
+            <i class="fas fa-file-pdf small text-muted"></i>
+            <i class="fas fa-external-link-alt small text-muted"></i>
+          </a>
         </div>
       </div>
       <br>
-    </section>
-
-    <section class="bg-primary text-white pb-2 section-Portfolio pt-only" id="portfolio">
-      <div class="container-fluid text-center">
-        <h2 class="mb-3"><strong>Nossos Produtos</strong></h2>
+      <div class="row justify-content-center">
+        <div class="col-lg-6 col-12 text-muted small text-justify">
+          Os manuais acima se referem ao Grupo Navi composto por Navi Capital e Navi Yield. A Navi Yield encontra-se em
+          fase de
+          credenciamento junto aos órgãos reguladores e autorreguladores da atividade de administração de carteira de
+          valores
+          mobiliários, sendo certo que qualquer atividade de gestão por tal instituição apenas será iniciada após a
+          obtenção das
+          autorizações necessárias.
+        </div>
       </div>
-    </section>
+      <br>
+      <br>
 
-    <section class="p-0 bg-dark pt-only">
-      <div class="container-fluid p-0">
-        <div class="row no-gutters">
-          <div class="col-lg-3 col-sm-6">
-            <a class="portfolio-box" href="#" data-toggle="modal" data-target=".modal-ls">
-              <img class="img-fluid" src="img/portfolio/thumbnails/1.jpg" alt="">
-              <div class="portfolio-box-caption">
-                <div class="portfolio-box-caption-content">
-                  <div class="project-category">
-                    FUNDO
-                  </div>
-                  <div class="project-name">
-                      <h2><strong>LONG SHORT</strong></h2>
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="col-lg-3 col-sm-6">
-            <a class="portfolio-box" href="#" data-toggle="modal" data-target=".modal-lb">
-              <img class="img-fluid" src="img/portfolio/thumbnails/2.jpg" alt="">
-              <div class="portfolio-box-caption">
-                <div class="portfolio-box-caption-content">
-                  <div class="project-category">
-                    FUNDO
-                  </div>
-                  <div class="project-name">
-                      <h2><strong>LONG BIASED</strong></h2>
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="col-lg-3 col-sm-6">
-            <a class="portfolio-box" href="#" data-toggle="modal" data-target=".modal-lo">
-              <img class="img-fluid" src="img/portfolio/thumbnails/3.jpg" alt="">
-              <div class="portfolio-box-caption">
-                <div class="portfolio-box-caption-content">
-                  <div class="project-category">
-                    FUNDO
-                  </div>
-                  <div class="project-name">
-                    <h2><strong>LONG ONLY</strong></h2>
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="col-lg-3 col-sm-6">
-            <a class="portfolio-box" href="#" data-toggle="modal" data-target=".modal-prev">
-              <img class="img-fluid" src="img/portfolio/thumbnails/7.jpg" alt="">
-              <div class="portfolio-box-caption">
-                <div class="portfolio-box-caption-content">
-                  <div class="project-category">
-                    FUNDO
-                  </div>
-                  <div class="project-name">
-                    <h2><strong>PREV</strong></h2>
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-        </div>
-      </div>      
-      <div class="container-fluid text-white text-center">
-        <br>
-        <h2 class="mb-4">Documentos para download</h2>
-        <div class="row justify-content-center">
-            <div class="col-xl-3 col-md-12 div-Documents">
-            <a class="btn btn-light sr-button" href="files/Formulario%20de%20Referencia.pdf" target="_blank">Formulário de referência
-              <i class="fas fa-file-pdf small text-muted"></i>
-              <i class="fas fa-external-link-alt small text-muted"></i>
-            </a>
-        </div>
-        <div class="col-xl-3 col-md-12 div-Documents">
-              <a class="btn btn-light sr-button" href="files/Politica%20de%20Gestao%20de%20Risco.pdf" target="_blank">Política de Risco
-                <i class="fas fa-file-pdf small text-muted"></i>
-                <i class="fas fa-external-link-alt small text-muted"></i>
-              </a>              
-            </div>
-        </div>
-        <div class="row justify-content-center">
-            <div class="col-xl-3 col-md-12 div-Documents">
-                <a class="btn btn-light sr-button" href="files/codigo%20de%20etica.pdf" target="_blank">Código de ética
-                  <i class="fas fa-file-pdf small text-muted"></i>
-                  <i class="fas fa-external-link-alt small text-muted"></i>
-                </a>
-          </div>
-          <div class="col-xl-3 col-md-12 div-Documents">       
-                <a class="btn btn-light sr-button" href="files/Politica%20de%20Investimentos%20Pessoais.pdf" target="_blank">Política de Investimentos Pessoais              
-                <i class="fas fa-file-pdf small text-muted"></i>
-                <i class="fas fa-external-link-alt small text-muted"></i>
-              </a>                           
-          </div>
-        </div>
-        <div class="row justify-content-center">
-          <div class="col-xl-3 col-md-12 div-Documents">
-            <a class="btn btn-light sr-button" href="files/Politica%20de%20Rateio%20e%20Divisao%20de%20Ordens.pdf" target="_blank">Política de rateio e divisão de ordens
-              <i class="fas fa-file-pdf small text-muted"></i>
-              <i class="fas fa-external-link-alt small text-muted"></i>
-            </a>
-          </div>
-          <div class="col-xl-3 col-md-12 div-Documents">            
-              <a class="btn btn-light sr-button" href="files/Prevencao%20a%20Lavagem%20de%20Dinheiro.pdf" target="_blank">Política de PLD
-              <i class="fas fa-file-pdf small text-muted"></i>
-              <i class="fas fa-external-link-alt small text-muted"></i>
-            </a>            
-          </div>
-        </div>
-                      
-        <div class="row justify-content-center">
-          <div class="col-xl-3 col-md-12 div-Documents">
-            <a class="btn btn-light sr-button" href="files/Politica%20de%20Controles%20Internos.pdf" target="_blank">Controles internos
-              <i class="fas fa-file-pdf small text-muted"></i>
-              <i class="fas fa-external-link-alt small text-muted"></i>
-            </a>
-          </div>
-          <div class="col-xl-3 col-md-12 div-Documents">            
-            <a class="btn btn-light sr-button" href="files/Politica%20de%20Voto.pdf" target="_blank">Política de Voto
-              <i class="fas fa-file-pdf small text-muted"></i>
-              <i class="fas fa-external-link-alt small text-muted"></i>
-            </a>            
-          </div>
-        </div>
+    </div>
+  </section>
 
-        <div class="row justify-content-center">
-          <div class="col-xl-3 col-md-12 div-Documents">
-            <a class="btn btn-light sr-button" href="files/Politica%20de%20Selecao%20Contratacao%20e%20Monitoramento%20de%20Terceiros.pdf" target="_blank">Contratação de Terceiros
-              <i class="fas fa-file-pdf small text-muted"></i>
-              <i class="fas fa-external-link-alt small text-muted"></i>
-            </a>
-          </div>
-          <div class="col-xl-3 col-md-12 div-Documents">            
-            <a class="btn btn-light sr-button" href="files/Politica%20de%20Seguranca%20da%20Informacao%20e%20Seguranca%20Cibernetica.pdf" target="_blank">Segurança da Informação
-              <i class="fas fa-file-pdf small text-muted"></i>
-              <i class="fas fa-external-link-alt small text-muted"></i>
-            </a>            
-          </div>
-        </div>  
-
-        <div class="row justify-content-center">
-          <div class="col-xl-3 col-md-12 div-Documents">
-            <a class="btn btn-light sr-button" href="files/Navi%20Yield%20-%20FormularioReferencia.pdf" target="_blank">FORM. DE REF. NAVI YIELD
-              <i class="fas fa-file-pdf small text-muted"></i>
-              <i class="fas fa-external-link-alt small text-muted"></i>
-            </a>
-          </div>
-          <div class="col-xl-3 col-md-12 div-Documents">            
-            <a class="btn btn-light sr-button" href="files/Plano%20de%20Continuidade%20de%20Negocios.pdf" target="_blank">CONTINUIDADE DO NEGÓCIO
-              <i class="fas fa-file-pdf small text-muted"></i>
-              <i class="fas fa-external-link-alt small text-muted"></i>
-            </a>            
-          </div>
-        </div>          
-        <br>    
-        <div class="row justify-content-center">
-            <div class="col-lg-6 col-12 text-muted small text-justify">            
-                Os manuais acima se referem ao Grupo Navi composto por Navi Capital e Navi Yield. A Navi Yield encontra-se em fase de credenciamento junto aos órgãos reguladores e autorreguladores da atividade de administração de carteira de valores mobiliários, sendo certo que qualquer atividade de gestão por tal instituição apenas será iniciada após a obtenção das autorizações necessárias.
-            </div>          
-        </div>    
-        <br>
-        <br>
-
+  <section id="contact" class="section-Contato">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 mx-auto text-center">
+          <h2 class="section-heading" data-localize="contact.title"></h2>
+          <hr class="my-4">
+        </div>
       </div>
-    </section>
-    
-    <section id="contact" class="section-Contato">
+      <div class="row">
+        <div class="col-lg-3 ml-auto text-center">
+          <p data-localize="contact.rj_street"></p>
+          <p>22440-035 Leblon</p>
+          <p data-localize="contact.rj"></p>
+        </div>
+        <div class="col-lg-3 mr-auto text-center">
+          <p data-localize="contact.sp_street"></p>
+          <p>04552-040 Vila Olímpia</p>
+          <p data-localize="contact.sp"></p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-3 ml-auto text-center">
+          <a href="tel:+552135902410">
+            <i class="fa fa-phone fa-3x mb-3 sr-contact"></i>
+            <p>+55 21 3590-2410</p>
+          </a>
+        </div>
+        <div class="col-lg-3 text-center">
+          <a href="mailto:contato@navi.com.br">
+            <i class="fa fa-envelope fa-3x mb-3 sr-contact"></i>
+            <p>contato@navi.com.br</p>
+          </a>
+        </div>
+        <div class="col-lg-3 mr-auto text-center">
+          <a href="https://www.linkedin.com/company/navicapital/?originalSubdomain=pt" target="_blank">
+            <i class="fa fa-linkedin-in fa-3x mb-3 sr-contact"></i>
+            <p>Linkedin</p>
+          </a>
+        </div>
+        <div class="col-lg-3 mr-auto text-center">
+          <a href="https://www.instagram.com/navicapital/" target="_blank">
+            <i class="fa fa-instagram fa-3x mb-3 sr-contact"></i>
+            <p>Instagram</p>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-primary text-white pb-2 section-Portfolio" id="form">
+    <div id="accordion">
       <div class="container">
-        <div class="row">
-          <div class="col-lg-8 mx-auto text-center">
-            <h2 class="section-heading" data-localize="contact.title"></h2>
-            <hr class="my-4">
-          </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-3 ml-auto text-center">              
-              <p data-localize="contact.rj_street"></p>
-              <p>22440-035 Leblon</p>
-              <p data-localize="contact.rj"></p>
-            </div>
-            <div class="col-lg-3 mr-auto text-center">
-              <p data-localize="contact.sp_street"></p>
-              <p>04552-040 Vila Olímpia</p>
-              <p data-localize="contact.sp"></p>
-            </div>            
-        </div>
-        <div class="row">
-          <div class="col-lg-3 ml-auto text-center">
-            <a href="tel:+552135902410">
-              <i class="fa fa-phone fa-3x mb-3 sr-contact"></i>
-              <p>+55 21 3590-2410</p>
-            </a>
-          </div>
-          <div class="col-lg-3 text-center">
-            <a href="mailto:contato@navi.com.br">
-              <i class="fa fa-envelope fa-3x mb-3 sr-contact"></i>
-              <p>contato@navi.com.br</p>
-            </a>
-          </div>
-          <div class="col-lg-3 mr-auto text-center">
-            <a href="https://www.linkedin.com/company/navicapital/?originalSubdomain=pt" target="_blank">
-              <i class="fa fa-linkedin-in fa-3x mb-3 sr-contact"></i>
-              <p>Linkedin</p>
-            </a>
-          </div>
-		      <div class="col-lg-3 mr-auto text-center">
-            <a href="https://www.instagram.com/navicapital/" target="_blank">
-              <i class="fa fa-instagram fa-3x mb-3 sr-contact"></i>
-              <p>Instagram</p>
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="bg-primary text-white pb-2 section-Portfolio" id="form">
-      <div id="accordion">
-        <div class="container">
-          <div class="" id="headingOne">
-            <h5 class="mb-0">
-              <div class="row collapsed" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                <div class="col-lg-6 mx-auto text-center">
-                  <h2 class="section-heading text-white mb-0" data-localize="form.title"></h2>
-                  <div class="collapse-arrow">
-                    <i class="fas fa-chevron-down fa-2x"></i>
-                  </div>
-                  <div class="collapse-hr">
-                    <hr class="light my-4">
-                  </div>
+        <div class="" id="headingOne">
+          <h5 class="mb-0">
+            <div class="row collapsed" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false"
+              aria-controls="collapseOne">
+              <div class="col-lg-6 mx-auto text-center">
+                <h2 class="section-heading text-white mb-0" data-localize="form.title"></h2>
+                <div class="collapse-arrow">
+                  <i class="fas fa-chevron-down fa-2x"></i>
+                </div>
+                <div class="collapse-hr">
+                  <hr class="light my-4">
                 </div>
               </div>
-            </h5>
-          </div>
-          <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
-            <div class="row">
-              <div class="col-lg-6 mx-auto">
-                <form action="https://formspree.io/moqvbede" method="POST">
-                  <div class="form-group">
-                    <input type="hidden" name="_next" value="https://www.navi.com.br/thanks.html" />
-                    <div class="row">
-                      <div class="col">
-                        <label for="exampleInputEmail1" data-localize="form.name">Name</label>
-                        <input class="form-control form-control-navi" type="text" name="name">
-                      </div>
-                      <div class="col">
-                        <label for="exampleInputEmail1" data-localize="form.company">Company</label>
-                        <input class="form-control form-control-navi" type="text" name="company">
-                        <input class="form-control" type="hidden" name="language"
-                          data-localize="form.language"></input>
-                      </div>
+            </div>
+          </h5>
+        </div>
+        <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+          <div class="row">
+            <div class="col-lg-6 mx-auto">
+              <form action="https://formspree.io/moqvbede" method="POST">
+                <div class="form-group">
+                  <input type="hidden" name="_next" value="https://www.navi.com.br/thanks.html" />
+                  <div class="row">
+                    <div class="col">
+                      <label for="exampleInputEmail1" data-localize="form.name">Name</label>
+                      <input class="form-control form-control-navi" type="text" name="name">
                     </div>
-                    <div class="row mt-2">
-                      <div class="col">
-                        <label for="exampleInputEmail1">Email</label>
-                        <input class="form-control form-control-navi" type="email" name="_replyto">
-                      </div>
-                    </div>
-                    <div class="row mt-3">
-                      <div class="col">
-                        <div class="g-recaptcha" data-sitekey="6LeiHccUAAAAAGTWVmm-hvfGDKEArpdogsthaQ1e"></div>
-                      </div>
-                      <div class="col text-right">
-                        <button class="btn btn-light btn-x2 js-scroll-trigger mt-3" type="submit"
-                          data-localize="form.send"></button>
-                      </div>
+                    <div class="col">
+                      <label for="exampleInputEmail1" data-localize="form.company">Company</label>
+                      <input class="form-control form-control-navi" type="text" name="company">
+                      <input class="form-control" type="hidden" name="language" data-localize="form.language"></input>
                     </div>
                   </div>
-                </form>
-              </div>
+                  <div class="row mt-2">
+                    <div class="col">
+                      <label for="exampleInputEmail1">Email</label>
+                      <input class="form-control form-control-navi" type="email" name="_replyto">
+                    </div>
+                  </div>
+                  <div class="row mt-3">
+                    <div class="col">
+                      <div class="g-recaptcha" data-sitekey="6LeiHccUAAAAAGTWVmm-hvfGDKEArpdogsthaQ1e"></div>
+                    </div>
+                    <div class="col text-right">
+                      <button class="btn btn-light btn-x2 js-scroll-trigger mt-3" type="submit"
+                        data-localize="form.send"></button>
+                    </div>
+                  </div>
+                </div>
+              </form>
             </div>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section id="disclaimer" style="border-top: 1px solid lightgray;">
-      <div class="container" style="font-size:15px;">
-        <div class="row">
-          <div class="col-lg-9 col-12 text-muted small text-justify" data-localize="contact.disclaimer"></div>
+  <section id="disclaimer" style="border-top: 1px solid lightgray;">
+    <div class="container" style="font-size:15px;">
+      <div class="row">
+        <div class="col-lg-9 col-12 text-muted small text-justify" data-localize="contact.disclaimer"></div>
 
-          <div class="col-lg-3 col-12" id="anbima">
-            <div class="row">
-              <div class="col-12">
-                <a href="http://www.anbima.com.br/" target="_blank">
-                  <img src="img/anbima.png" class="img-thumbnail mb-3" alt="Anbima" />
-                </a>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-12">
-                <a href="http://www.comoinvestir.com.br/" target="_blank">
-                  <img src="img/investir.png" class="img-thumbnail mb-3" alt="Como Investir" />
-                </a>
-              </div>
+        <div class="col-lg-3 col-12" id="anbima">
+          <div class="row">
+            <div class="col-12">
+              <a href="http://www.anbima.com.br/" target="_blank">
+                <img src="img/anbima.png" class="img-thumbnail mb-3" alt="Anbima" />
+              </a>
             </div>
           </div>
-
+          <div class="row">
+            <div class="col-12">
+              <a href="http://www.comoinvestir.com.br/" target="_blank">
+                <img src="img/investir.png" class="img-thumbnail mb-3" alt="Como Investir" />
+              </a>
+            </div>
+          </div>
         </div>
+
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- Plugin JavaScript -->
-    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-    <script src="vendor/scrollreveal/scrollreveal.min.js"></script>
-    <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+  <script src="vendor/scrollreveal/scrollreveal.min.js"></script>
+  <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
 
-    <!-- Custom scripts for this template -->
-    <script src="js/creative.min.js"></script>
+  <!-- Custom scripts for this template -->
+  <script src="js/creative.min.js"></script>
 
-    <!-- language pack -->
-    <script src="js/jquery.localize.min.js"></script>
-    <script>
-      var language = (navigator.languages ? navigator.languages[0] : (navigator.language || navigator.userLanguage)).substring(0,2);
-      language = ["pt", "en"].includes(language) ? language : "pt";
-      $("[data-localize]").localize("navi", { language: language });
-      if(language == "pt"){
-        $(".pt-only").show();
-      } else {
-        $(".pt-only").hide();
-      }
-    </script>
+  <!-- language pack -->
+  <script src="js/jquery.localize.min.js"></script>
+  <script>
+    var language = (navigator.languages ? navigator.languages[0] : (navigator.language || navigator.userLanguage))
+      .substring(0, 2);
+    language = ["pt", "en"].includes(language) ? language : "pt";
+    $("[data-localize]").localize("navi", {
+      language: language
+    });
+    if (language == "pt") {
+      $(".pt-only").show();
+    } else {
+      $(".pt-only").hide();
+    }
+  </script>
 
-    <script>
-      $(function(){
-        var includes = $('[data-include]');
-        jQuery.each(includes, function(){
-          var file = 'views/' + $(this).data('include') + '.htm';
-          $(this).load(file);
-        });
+  <script>
+    $(function () {
+      var includes = $('[data-include]');
+      jQuery.each(includes, function () {
+        var file = 'views/' + $(this).data('include') + '.htm';
+        $(this).load(file);
       });
-    </script>
-	
-	 <script>
-		$(document).ready(function(){
-		  var screenWidth = $(window).width();
-		  // if window width is smaller than 800 remove the autoplay attribute
-		  // from the video
-		  if (screenWidth < 800){
-				$('video').remove();
-		  } else {
-			$('video').attr('autoplay');
-		  }
-		});
-    </script>
+    });
+  </script>
 
-    <!-- Modal Cotas -->
-    <div class="modal fade modal-cotas" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel"><strong>Cotas e Rentabilidades</strong></h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
+  <script>
+    $(document).ready(function () {
+      var screenWidth = $(window).width();
+      // if window width is smaller than 800 remove the autoplay attribute
+      // from the video
+      if (screenWidth < 800) {
+        $('video').remove();
+      } else {
+        $('video').attr('autoplay');
+      }
+    });
+  </script>
+
+  <!-- Modal Partner -->
+  <div class="modal fade" id="modalPartner" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 class="modal-title" id="exampleModalLongTitle">Modal title</h3>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <h5 class="modal-subtitle" id="exampleModalLongTitle">Modal subtitle</h5>
+          <div class="modal-text text-justify">
           </div>
-          <div class="modal-body graph-text">
-            <div class="table-responsive">
-                <div data-include="cotas"></div>
+        </div>
+        <div class="modal-footer justify-content-start">
+          <a class="modal-link" style="padding-right: 0.3rem;" href="https://www.instagram.com/navicapital/"
+            target="_blank">
+            <i class="fa fa-linkedin-in fa-nav-icon"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript" language="javascript" src="documents/partners.js" id="partnersJson"></script>
+  <script>
+    $('#modalPartner').on('show.bs.modal', function (event) {
+      var button = $(event.relatedTarget) // Button that triggered the modal
+      var partner = button.data('partner') // Extract info from data-partner attributes
+      var modal = $(this)
+      var partners = language=='en' ? partners_en:partners_pt
+      modal.find('.modal-title').text(partners[partner].title)
+      modal.find('.modal-subtitle').text(partners[partner].subtitle)
+      modal.find('.modal-text').text(partners[partner].body)
+      modal.find('.modal-link').attr("href", partners[partner].linkedin)
+    })
+  </script>
+  <!-- End modal partners-->
+
+
+  <!-- Modal Cotas -->
+  <div class="modal fade modal-cotas" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel"><strong>Cotas e Rentabilidades</strong></h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body graph-text">
+          <div class="table-responsive">
+            <div data-include="cotas"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Modal Fundo LS -->
+  <div class="modal fade modal-ls" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel"><strong>NAVI Long Short FIC FIM</strong></h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body graph-text">
+          <div class="table-responsive">
+            <table class="table graph-table table-bordered">
+              <thead>
+                <tr>
+                  <th>Rentabilidade</th>
+                  <th>Desde o início</th>
+                  <th>36 meses</th>
+                  <th>24 meses</th>
+                  <th>12 meses</th>
+                  <th>PL</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Fundo</td>
+                  <td>205,10% </td>
+                  <td>41,38% </td>
+                  <td>25,72% </td>
+                  <td>9,45% </td>
+                  <td>R$ 909M</td>
+                </tr>
+                <tr>
+                  <td>CDI</td>
+                  <td>137,86% </td>
+                  <td>23,99% </td>
+                  <td>12,77% </td>
+                  <td>5,96% </td>
+                  <td>-</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="row">
+            <div class="col-lg-8">
+              <img src="img/graficos/graficoLS.png" alt="" class="">
+              <p>Dados de 31/12/2019 e início do fundo em 29/09/2010.</p>
+            </div>
+            <div class="col-lg-4">
+              <p>
+                <strong>Público Alvo:</strong> Investidores em geral. <br>
+                <strong>Aplicação (Cotização):</strong> D+0. <br>
+                <strong>Resgate (Cotização): </strong>D+30 (corridos). <br>
+                <strong>Resgate (Pagamento): </strong>2º dia útil após cotização. <br>
+                <strong>Aplicação Inicial:</strong> R$ 50.000,00 <br>
+                <strong>Aplicação Inicial (conta e ordem):</strong> R$ 5.000,00 <br>
+                <strong>Movimentação Mínima:</strong> R$ 10.000,00 <br>
+                <strong>Horário de Solicitação de Movimentação:</strong>Até 15h. <br>
+                <strong>Taxa de Administração:</strong> 2% a.a. (pago mensalmente)<br>
+                <strong>Taxa de Performance:</strong> 20% do que exceder 100% do CDI, com high water mark. (pago
+                semestralmente) <br>
+                <strong>Administração:</strong> BEM DTVM <br>
+                <strong>Custódia:</strong> Banco Bradesco <br>
+                <strong>Auditoria:</strong> KPMG. <br>
+                <strong>Categoria ANBIMA:</strong> Long and Short - Direcional <br>
+                <strong>Tributação:</strong> O fundo perseguirá o tratamento tributário de longo prazo. IR Fonte
+                decrescente.<br>
+                <strong>Status:</strong> Fechado para captação.<br>
+              </p>
+
+              <a class="btn btn-light sr-button" href="files/Relatorio_LS.pdf" target="_blank">Relatório
+                <i class="fas fa-file-pdf small text-muted"></i>
+                <i class="fas fa-external-link-alt small text-muted"></i>
+              </a>
+              <br>
+              <br>
+
+              <a class="btn btn-light sr-button" href="files/Regulamento_LS.pdf" target="_blank">Regulamento
+                <i class="fas fa-file-pdf small text-muted"></i>
+                <i class="fas fa-external-link-alt small text-muted"></i>
+              </a>
             </div>
           </div>
         </div>
       </div>
     </div>
+  </div>
 
-
-    <!-- Modal Fundo LS -->
-    <div class="modal fade modal-ls" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel"><strong>NAVI Long Short FIC FIM</strong></h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
+  <!-- Modal Fundo LB -->
+  <div class="modal fade modal-lb" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel"><strong>Navi Long Biased FIC FIM</strong></h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body graph-text">
+          <div class="table-responsive">
+            <table class="table graph-table table-bordered">
+              <thead>
+                <tr>
+                  <th>Rentabilidade</th>
+                  <th>Desde o início</th>
+                  <th>36 meses</th>
+                  <th>24 meses</th>
+                  <th>12 meses</th>
+                  <th>PL</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Fundo</td>
+                  <td>113,52%</td>
+                  <td>112,08%</td>
+                  <td>72,60%</td>
+                  <td>29,84%</td>
+                  <td>R$ 893M</td>
+                </tr>
+                <tr>
+                  <td>IMA-B</td>
+                  <td>58,39%</td>
+                  <td>56,79%</td>
+                  <td>39,01%</td>
+                  <td>22,95%</td>
+                  <td>-</td>
+                </tr>
+              </tbody>
+            </table>
           </div>
-          <div class="modal-body graph-text">
-            <div class="table-responsive">
-              <table class="table graph-table table-bordered">
-                <thead>
-                  <tr>
-                    <th>Rentabilidade</th>
-					<th>Desde o início</th>
-					<th>36 meses</th>
-					<th>24 meses</th>
-                    <th>12 meses</th>
-                    <th>PL</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>Fundo</td>
-                    <td>205,10%	</td>
-                    <td>41,38%	</td>
-                    <td>25,72%	</td>
-                    <td>9,45%	</td>
-                    <td>R$ 909M</td>
-                  </tr>
-                  <tr>
-                    <td>CDI</td>
-                    <td>137,86%	</td>
-                    <td>23,99%	</td>
-                    <td>12,77%	</td>
-                    <td>5,96%	</td>
-                    <td>-</td>
-                  </tr>
-                </tbody>
-              </table>
+          <div class="row">
+            <div class="col-lg-8">
+              <img src="img/graficos/graficoLB.png" alt="" class="">
+              <p>Dados de 31/12/2019 e início do fundo em 27/12/2016.</p>
             </div>
-            <div class="row">
-              <div class="col-lg-8">
-                <img src="img/graficos/graficoLS.png" alt="" class="">
-                <p>Dados de 31/12/2019 e início do fundo em 29/09/2010.</p>
-              </div>
-              <div class="col-lg-4">
-                <p>
-                  <strong>Público Alvo:</strong> Investidores em geral. <br>
-                  <strong>Aplicação (Cotização):</strong> D+0. <br>
-                  <strong>Resgate (Cotização): </strong>D+30 (corridos). <br>
-                  <strong>Resgate (Pagamento): </strong>2º dia útil após cotização. <br>
-                  <strong>Aplicação Inicial:</strong> R$ 50.000,00 <br>
-				  <strong>Aplicação Inicial (conta e ordem):</strong> R$ 5.000,00 <br>
-                  <strong>Movimentação Mínima:</strong> R$ 10.000,00 <br>
-				  <strong>Horário de Solicitação de Movimentação:</strong>Até 15h. <br>
-                  <strong>Taxa de Administração:</strong> 2% a.a. (pago mensalmente)<br>
-                  <strong>Taxa de Performance:</strong> 20% do que exceder 100% do CDI, com high water mark. (pago semestralmente) <br>
-                  <strong>Administração:</strong> BEM DTVM <br>
-                  <strong>Custódia:</strong> Banco Bradesco <br>
-                  <strong>Auditoria:</strong> KPMG. <br>
-                  <strong>Categoria ANBIMA:</strong> Long and Short - Direcional <br>
-                  <strong>Tributação:</strong> O fundo perseguirá o tratamento tributário de longo prazo. IR Fonte decrescente.<br>
-				  <strong>Status:</strong> Fechado para captação.<br>
-                </p>
+            <div class="col-lg-4">
+              <p>
+                <strong>Público Alvo:</strong> Investidores Qualificados. <br>
+                <strong>Aplicação (Cotização):</strong> D+0. <br>
+                <strong>Resgate (Cotização): </strong>D+60 (corridos). <br>
+                <strong>Resgate (Pagamento): </strong>2º dia útil após cotização. <br>
+                <strong>Aplicação Inicial:</strong> R$ 50.000,00 <br>
+                <strong>Aplicação Inicial (conta e ordem):</strong> R$ 5.000,00 <br>
+                <strong>Movimentação Mínima:</strong> R$ 10.000,00 <br>
+                <strong>Horário de Solicitação de Movimentação:</strong>Até 14:30h. <br>
+                <strong>Taxa de Administração:</strong> 2% a.a. (pago mensalmente)<br>
+                <strong>Taxa de Performance:</strong> 20% do que exceder 100% do IMA-B, com high water mark. (pago
+                semestralmente) <br>
+                <strong>Administração:</strong> BEM DTVM <br>
+                <strong>Custódia:</strong> Banco Bradesco <br>
+                <strong>Auditoria:</strong> KPMG. <br>
+                <strong>Categoria ANBIMA:</strong> Multimercado Livre <br>
+                <strong>Tributação:</strong> O fundo perseguirá o tratamento tributário dos fundos de renda
+                variável.<br>
+                <strong>Status:</strong> Aberto para captação.<br>
+              </p>
 
-                <a class="btn btn-light sr-button" href="files/Relatorio_LS.pdf" target="_blank">Relatório
-                  <i class="fas fa-file-pdf small text-muted"></i>
-                  <i class="fas fa-external-link-alt small text-muted"></i>
-                </a>
-                <br>
-                <br>
+              <a class="btn btn-light sr-button" href="files/Relatorio_LB.pdf" target="_blank">Relatório
+                <i class="fas fa-file-pdf small text-muted"></i>
+                <i class="fas fa-external-link-alt small text-muted"></i>
+              </a>
+              <br>
+              <br>
 
-                <a class="btn btn-light sr-button" href="files/Regulamento_LS.pdf" target="_blank">Regulamento
-                  <i class="fas fa-file-pdf small text-muted"></i>
-                  <i class="fas fa-external-link-alt small text-muted"></i>
-                </a>
-              </div>
+              <a class="btn btn-light sr-button" href="files/Regulamento_LB.pdf" target="_blank">Regulamento
+                <i class="fas fa-file-pdf small text-muted"></i>
+                <i class="fas fa-external-link-alt small text-muted"></i>
+              </a>
             </div>
           </div>
         </div>
       </div>
     </div>
+  </div>
 
-    <!-- Modal Fundo LB -->
-    <div class="modal fade modal-lb" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel"><strong>Navi Long Biased FIC FIM</strong></h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
+
+  <!-- Modal Fundo Prev -->
+  <div class="modal fade modal-prev" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel"><strong>Navi Long Short Icatu Previdencia FIM </strong></h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body graph-text">
+          <div class="table-responsive">
+            <table class="table graph-table table-bordered">
+              <thead>
+                <tr>
+                  <th>Rentabilidade</th>
+                  <th>Desde o início</th>
+                  <th>36 meses</th>
+                  <th>24 meses</th>
+                  <th>12 meses</th>
+                  <th>PL</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Fundo</td>
+                  <td>39,45%</td>
+                  <td>-</td>
+                  <td>31,61%</td>
+                  <td>12,52%</td>
+                  <td>R$ 95M</td>
+                </tr>
+                <tr>
+                  <td>CDI</td>
+                  <td>18,75%</td>
+                  <td>-</td>
+                  <td>12,77%</td>
+                  <td>5,96%</td>
+                  <td>-</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="row">
+            <div class="col-lg-8">
+              <img src="img/graficos/graficoPrev.png" alt="" class="">
+              <p>Dados de 31/12/2019 e início do fundo em 18/05/2017.</p>
             </div>
-            <div class="modal-body graph-text">
-              <div class="table-responsive">
-                <table class="table graph-table table-bordered">
-                  <thead>
-                    <tr>
-                      <th>Rentabilidade</th>
-                      <th>Desde o início</th>
-                      <th>36 meses</th>
-                      <th>24 meses</th>
-                      <th>12 meses</th>
-                      <th>PL</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>Fundo</td>
-                      <td>113,52%</td>
-                      <td>112,08%</td>
-                      <td>72,60%</td>
-                      <td>29,84%</td>
-                      <td>R$ 893M</td>
-                    </tr>
-                    <tr>
-                      <td>IMA-B</td>
-                      <td>58,39%</td>
-                      <td>56,79%</td>
-                      <td>39,01%</td>
-                      <td>22,95%</td>
-                      <td>-</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-              <div class="row">
-                <div class="col-lg-8">
-                  <img src="img/graficos/graficoLB.png" alt="" class="">
-                  <p>Dados de 31/12/2019 e início do fundo em 27/12/2016.</p>
-                </div>
-                <div class="col-lg-4">
-                  <p>
-                    <strong>Público Alvo:</strong> Investidores Qualificados. <br>
-                    <strong>Aplicação (Cotização):</strong> D+0. <br>
-                    <strong>Resgate (Cotização): </strong>D+60 (corridos). <br>
-                    <strong>Resgate (Pagamento): </strong>2º dia útil após cotização. <br>
-                    <strong>Aplicação Inicial:</strong> R$ 50.000,00 <br>
-					<strong>Aplicação Inicial (conta e ordem):</strong> R$ 5.000,00 <br>
-                    <strong>Movimentação Mínima:</strong> R$ 10.000,00 <br>
-					<strong>Horário de Solicitação de Movimentação:</strong>Até 14:30h. <br>
-                    <strong>Taxa de Administração:</strong> 2% a.a. (pago mensalmente)<br>
-                    <strong>Taxa de Performance:</strong> 20% do que exceder 100% do IMA-B, com high water mark. (pago semestralmente) <br>
-                    <strong>Administração:</strong> BEM DTVM <br>
-                    <strong>Custódia:</strong> Banco Bradesco <br>
-                    <strong>Auditoria:</strong> KPMG. <br>
-                    <strong>Categoria ANBIMA:</strong> Multimercado Livre <br>
-                    <strong>Tributação:</strong> O fundo perseguirá o tratamento tributário dos fundos de renda variável.<br>
-					<strong>Status:</strong> Aberto para captação.<br>
-                  </p>
+            <div class="col-lg-4">
+              <p>
+                <strong>Movimentações:</strong> Consultar a Seguradora. <br>
+                <strong>Resgate (Cotização): </strong>D+1 (útil). <br>
+                <strong>Resgate (Pagamento): </strong>2º dia útil após cotização. <br>
+                <strong>Aplicação Inicial:</strong> Não há <br>
+                <strong>Movimentação Mínima:</strong> Não há <br>
+                <strong>Taxa de Administração:</strong> 2% a.a. (pago mensalmente)<br>
+                <strong>Taxa de Performance:</strong> Não há <br>
+                <strong>Seguradora:</strong> Icatu <br>
+                <strong>Administração:</strong> BEM DTVM <br>
+                <strong>Custódia:</strong> Banco Bradesco <br>
+                <strong>Auditoria:</strong> PriceWaterhouseCooper. <br>
+                <strong>Categoria ANBIMA:</strong> Previdencia Multimercados <br>
+                <strong>Status:</strong> Fechado para novos clientes.<br>
+              </p>
 
-                  <a class="btn btn-light sr-button" href="files/Relatorio_LB.pdf" target="_blank">Relatório
-                    <i class="fas fa-file-pdf small text-muted"></i>
-                    <i class="fas fa-external-link-alt small text-muted"></i>
-                  </a>
-                  <br>
-                  <br>
+              <a class="btn btn-light sr-button" href="files/Relatorio_Prev.pdf" target="_blank">Relatório
+                <i class="fas fa-file-pdf small text-muted"></i>
+                <i class="fas fa-external-link-alt small text-muted"></i>
+              </a>
+              <br>
+              <br>
 
-                  <a class="btn btn-light sr-button" href="files/Regulamento_LB.pdf" target="_blank">Regulamento
-                    <i class="fas fa-file-pdf small text-muted"></i>
-                    <i class="fas fa-external-link-alt small text-muted"></i>
-                  </a>
-                </div>
-              </div>
+              <a class="btn btn-light sr-button" href="files/Regulamento_Prev.pdf" target="_blank">Regulamento
+                <i class="fas fa-file-pdf small text-muted"></i>
+                <i class="fas fa-external-link-alt small text-muted"></i>
+              </a>
             </div>
           </div>
         </div>
       </div>
+    </div>
+  </div>
 
-
-    <!-- Modal Fundo Prev -->
-    <div class="modal fade modal-prev" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel"><strong>Navi Long Short Icatu Previdencia FIM </strong></h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
+  <!-- Modal Fundo LO -->
+  <div class="modal fade modal-lo" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel"><strong>Navi Institucional FIC FIA</strong></h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body graph-text">
+          <div class="table-responsive">
+            <table class="table graph-table table-bordered">
+              <thead>
+                <tr>
+                  <th>Rentabilidade</th>
+                  <th>48 meses</th>
+                  <th>36 meses</th>
+                  <th>24 meses</th>
+                  <th>12 meses</th>
+                  <th>PL</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Fundo</td>
+                  <td>261,55%</td>
+                  <td>139,93%</td>
+                  <td>89,46%</td>
+                  <td>41,32%</td>
+                  <td>R$ 1.214M</td>
+                </tr>
+                <tr>
+                  <td>Ibovespa</td>
+                  <td>166,77%</td>
+                  <td>92,01%</td>
+                  <td>51,36%</td>
+                  <td>31,58%</td>
+                  <td>-</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="row">
+            <div class="col-lg-8">
+              <img src="img/graficos/graficoLO.png" alt="" class="">
+              <p>Dados de 31/12/2019 e início do fundo em 30/09/2011.</p>
             </div>
-            <div class="modal-body graph-text">
-              <div class="table-responsive">
-                <table class="table graph-table table-bordered">
-                  <thead>
-                    <tr>
-                      <th>Rentabilidade</th>
-                      <th>Desde o início</th>
-                      <th>36 meses</th>
-                      <th>24 meses</th>
-                      <th>12 meses</th>
-                      <th>PL</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>Fundo</td>
-                      <td>39,45%</td>
-                      <td>-</td>
-                      <td>31,61%</td>
-                      <td>12,52%</td>
-                      <td>R$ 95M</td>
-                    </tr>
-                    <tr>
-                      <td>CDI</td>
-                      <td>18,75%</td>
-                      <td>-</td>
-                      <td>12,77%</td>
-                      <td>5,96%</td>
-                      <td>-</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-              <div class="row">
-                <div class="col-lg-8">
-                  <img src="img/graficos/graficoPrev.png" alt="" class="">
-                  <p>Dados de 31/12/2019 e início do fundo em 18/05/2017.</p>
-                </div>
-                <div class="col-lg-4">
-                  <p>
-                    <strong>Movimentações:</strong> Consultar a Seguradora. <br>
-                    <strong>Resgate (Cotização): </strong>D+1 (útil). <br>
-                    <strong>Resgate (Pagamento): </strong>2º dia útil após cotização. <br>
-                    <strong>Aplicação Inicial:</strong> Não há <br>
-                    <strong>Movimentação Mínima:</strong> Não há <br>
-                    <strong>Taxa de Administração:</strong> 2% a.a. (pago mensalmente)<br>
-                    <strong>Taxa de Performance:</strong> Não há <br>
-                    <strong>Seguradora:</strong> Icatu <br>
-                    <strong>Administração:</strong> BEM DTVM <br>                    
-                    <strong>Custódia:</strong> Banco Bradesco <br>
-                    <strong>Auditoria:</strong> PriceWaterhouseCooper. <br>
-                    <strong>Categoria ANBIMA:</strong> Previdencia Multimercados <br>
-					<strong>Status:</strong> Fechado para novos clientes.<br>
-                  </p>
+            <div class="col-lg-4">
+              <p>
+                <strong>Público Alvo:</strong> Investidores em geral, inclusive companhias seguradoras, sociedades de
+                capitalização, entidades abertas e fechadas de previdência complementar e regimes próprios de
+                previdência social.<br>
+                <strong>Aplicação (Cotização):</strong> D+1 (úteis). <br>
+                <strong>Resgate (Cotização): </strong>D+30 (corridos). <br>
+                <strong>Resgate (Pagamento): </strong>2º dia útil após cotização. <br>
+                <strong>Aplicação Inicial:</strong> R$ 10.000,00 <br>
+                <strong>Aplicação Inicial (conta e ordem):</strong> R$ 5.000,00 <br>
+                <strong>Movimentação Mínima:</strong> R$ 5.000,00 <br>
+                <strong>Horário de Solicitação de Movimentação:</strong>Até 15h. <br>
+                <strong>Taxa de Administração:</strong> 1,5% a.a. (pago mensalmente)<br>
+                <strong>Taxa de Performance:</strong> 20% do que exceder 100% do índice BOVESPA, com high water mark.
+                (pago semestralmente) <br>
+                <strong>Administração:</strong> BEM DTVM <br>
+                <strong>Custódia:</strong> Banco Bradesco <br>
+                <strong>Auditoria:</strong> KPMG. <br>
+                <strong>Categoria ANBIMA:</strong> Ações Livre <br>
+                <strong>Tributação:</strong> IR de 15% sobre o rendimento nominal.<br>
+                <strong>Status:</strong> Fechado para captação.<br>
+              </p>
 
-                  <a class="btn btn-light sr-button" href="files/Relatorio_Prev.pdf" target="_blank">Relatório
-                    <i class="fas fa-file-pdf small text-muted"></i>
-                    <i class="fas fa-external-link-alt small text-muted"></i>
-                  </a>
-                  <br>
-                  <br>
+              <a class="btn btn-light sr-button" href="files/Relatorio_LO.pdf" target="_blank">Relatório
+                <i class="fas fa-file-pdf small text-muted"></i>
+                <i class="fas fa-external-link-alt small text-muted"></i>
+              </a>
+              <br>
+              <br>
 
-                  <a class="btn btn-light sr-button" href="files/Regulamento_Prev.pdf" target="_blank">Regulamento
-                    <i class="fas fa-file-pdf small text-muted"></i>
-                    <i class="fas fa-external-link-alt small text-muted"></i>
-                  </a>
-                </div>
-              </div>
+              <a class="btn btn-light sr-button" href="files/Regulamento_LO.pdf" target="_blank">Regulamento
+                <i class="fas fa-file-pdf small text-muted"></i>
+                <i class="fas fa-external-link-alt small text-muted"></i>
+              </a>
             </div>
           </div>
         </div>
       </div>
+    </div>
+  </div>
 
-    <!-- Modal Fundo LO -->
-    <div class="modal fade modal-lo" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel"><strong>Navi Institucional FIC FIA</strong></h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body graph-text">
-              <div class="table-responsive">
-                <table class="table graph-table table-bordered">
-                  <thead>
-                    <tr>
-                      <th>Rentabilidade</th>
-                      <th>48 meses</th>
-                      <th>36 meses</th>
-                      <th>24 meses</th>
-					  <th>12 meses</th>
-                      <th>PL</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>Fundo</td>
-                      <td>261,55%</td>
-                      <td>139,93%</td>
-                      <td>89,46%</td>
-					  <td>41,32%</td>
-                      <td>R$ 1.214M</td>
-                    </tr>
-                    <tr>
-                      <td>Ibovespa</td>
-                      <td>166,77%</td>
-					  <td>92,01%</td>
-                      <td>51,36%</td>
-					  <td>31,58%</td>
-                      <td>-</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-              <div class="row">
-                <div class="col-lg-8">
-                  <img src="img/graficos/graficoLO.png" alt="" class="">
-                  <p>Dados de 31/12/2019 e início do fundo em 30/09/2011.</p>
-                </div>
-                <div class="col-lg-4">
-                  <p>
-                    <strong>Público Alvo:</strong> Investidores em geral, inclusive companhias seguradoras, sociedades de capitalização, entidades abertas e fechadas de previdência complementar e regimes próprios de previdência social.<br>
-                    <strong>Aplicação (Cotização):</strong> D+1 (úteis). <br>
-                    <strong>Resgate (Cotização): </strong>D+30 (corridos). <br>
-                    <strong>Resgate (Pagamento): </strong>2º dia útil após cotização. <br>
-                    <strong>Aplicação Inicial:</strong> R$ 10.000,00 <br>
-					<strong>Aplicação Inicial (conta e ordem):</strong> R$ 5.000,00 <br>
-                    <strong>Movimentação Mínima:</strong> R$ 5.000,00 <br>
-					<strong>Horário de Solicitação de Movimentação:</strong>Até 15h. <br>
-                    <strong>Taxa de Administração:</strong> 1,5% a.a. (pago mensalmente)<br>
-                    <strong>Taxa de Performance:</strong> 20% do que exceder 100% do índice BOVESPA, com high water mark. (pago semestralmente) <br>
-                    <strong>Administração:</strong> BEM DTVM <br>
-                    <strong>Custódia:</strong> Banco Bradesco <br>
-                    <strong>Auditoria:</strong> KPMG. <br>
-                    <strong>Categoria ANBIMA:</strong> Ações Livre <br>
-                    <strong>Tributação:</strong> IR de 15% sobre o rendimento nominal.<br>
-					<strong>Status:</strong> Fechado para captação.<br>
-                  </p>
+</body>
 
-                  <a class="btn btn-light sr-button" href="files/Relatorio_LO.pdf" target="_blank">Relatório
-                    <i class="fas fa-file-pdf small text-muted"></i>
-                    <i class="fas fa-external-link-alt small text-muted"></i>
-                  </a>
-                  <br>
-                  <br>
-
-                  <a class="btn btn-light sr-button" href="files/Regulamento_LO.pdf" target="_blank">Regulamento
-                    <i class="fas fa-file-pdf small text-muted"></i>
-                    <i class="fas fa-external-link-alt small text-muted"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-  </body>
 </html>
-

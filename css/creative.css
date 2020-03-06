@@ -1,47 +1,55 @@
-﻿.KyrialSansProSemiBold { 
-	font-family: KyrialSansProSemiBold;
-	font-weight: normal;
-	font-style: normal;
+﻿.KyrialSansProSemiBold {
+  font-family: KyrialSansProSemiBold;
+  font-weight: normal;
+  font-style: normal;
 }
-.KyrialSansProBold { 
-	font-family: KyrialSansProBold;
-	font-weight: normal;
-	font-style: normal;
+
+.KyrialSansProBold {
+  font-family: KyrialSansProBold;
+  font-weight: normal;
+  font-style: normal;
 }
-.KyrialSansProLight { 
-	font-family: KyrialSansProLight;
-	font-weight: normal;
-	font-style: normal;
+
+.KyrialSansProLight {
+  font-family: KyrialSansProLight;
+  font-weight: normal;
+  font-style: normal;
 }
-.KyrialSansProRegular { 
-	font-family: KyrialSansProRegular;
-	font-weight: normal;
-	font-style: normal;
+
+.KyrialSansProRegular {
+  font-family: KyrialSansProRegular;
+  font-weight: normal;
+  font-style: normal;
 }
-.KyrialSansProLight-Italic { 
-	font-family: KyrialSansProLight-Italic;
-	font-weight: normal;
-	font-style: normal;
+
+.KyrialSansProLight-Italic {
+  font-family: KyrialSansProLight-Italic;
+  font-weight: normal;
+  font-style: normal;
 }
-.KyrialSansProRegular-Italic { 
-	font-family: KyrialSansProRegular-Italic;
-	font-weight: normal;
-	font-style: normal;
+
+.KyrialSansProRegular-Italic {
+  font-family: KyrialSansProRegular-Italic;
+  font-weight: normal;
+  font-style: normal;
 }
-.KyrialSansProBold-Italic { 
-	font-family: KyrialSansProBold-Italic;
-	font-weight: normal;
-	font-style: normal;
+
+.KyrialSansProBold-Italic {
+  font-family: KyrialSansProBold-Italic;
+  font-weight: normal;
+  font-style: normal;
 }
-.KyrialSansProSemiBold-Italic { 
-	font-family: KyrialSansProSemiBold-Italic;
-	font-weight: normal;
-	font-style: normal;
+
+.KyrialSansProSemiBold-Italic {
+  font-family: KyrialSansProSemiBold-Italic;
+  font-weight: normal;
+  font-style: normal;
 }
-.AmpleSoft-Light { 
-	font-family: AmpleSoft-Light;
-	font-weight: normal;
-	font-style: normal;
+
+.AmpleSoft-Light {
+  font-family: AmpleSoft-Light;
+  font-weight: normal;
+  font-style: normal;
 }
 
 body,
@@ -142,12 +150,13 @@ img::-moz-selection {
   font-family: AmpleSoft-Light;
 }
 
-#mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
+#mainNav .navbar-brand:focus,
+#mainNav .navbar-brand:hover {
   color: #f1725e;
 }
 
-#mainNav .navbar-nav > li.nav-item > a.nav-link,
-#mainNav .navbar-nav > li.nav-item > a.nav-link:focus {
+#mainNav .navbar-nav>li.nav-item>a.nav-link,
+#mainNav .navbar-nav>li.nav-item>a.nav-link:focus {
   font-size: .9rem;
   font-weight: 700;
   text-transform: uppercase;
@@ -174,19 +183,19 @@ img::-moz-selection {
   padding-top: 0.15rem;
 }
 
-#mainNav .navbar-nav > li.nav-item > a.nav-link:hover,
-#mainNav .navbar-nav > li.nav-item > a.nav-link:focus:hover {
+#mainNav .navbar-nav>li.nav-item>a.nav-link:hover,
+#mainNav .navbar-nav>li.nav-item>a.nav-link:focus:hover {
   color: #f1725e;
 }
 
-#mainNav .navbar-nav > li.nav-item > a.nav-link.active,
-#mainNav .navbar-nav > li.nav-item > a.nav-link:focus.active {
+#mainNav .navbar-nav>li.nav-item>a.nav-link.active,
+#mainNav .navbar-nav>li.nav-item>a.nav-link:focus.active {
   color: #f1725e !important;
   background-color: transparent;
 }
 
-#mainNav .navbar-nav > li.nav-item > a.nav-link.active:hover,
-#mainNav .navbar-nav > li.nav-item > a.nav-link:focus.active:hover {
+#mainNav .navbar-nav>li.nav-item>a.nav-link.active:hover,
+#mainNav .navbar-nav>li.nav-item>a.nav-link:focus.active:hover {
   background-color: transparent;
 }
 
@@ -195,48 +204,61 @@ img::-moz-selection {
     border-color: transparent;
     background-color: transparent;
   }
+
   #mainNav .navbar-brand {
     color: rgba(255, 255, 255, 1);
   }
-  #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
+
+  #mainNav .navbar-brand:focus,
+  #mainNav .navbar-brand:hover {
     color: #fff;
   }
-  #mainNav .navbar-nav > li.nav-item > a.nav-link {
+
+  #mainNav .navbar-nav>li.nav-item>a.nav-link {
     padding: 0.5rem 1rem;
   }
-  #mainNav .navbar-nav > li.nav-item > a.nav-link-sp {
+
+  #mainNav .navbar-nav>li.nav-item>a.nav-link-sp {
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
     padding-left: 1rem;
     padding-right: 0.5rem;
   }
-  #mainNav .navbar-nav > li.nav-item > a.nav-link,
-  #mainNav .navbar-nav > li.nav-item > a.nav-link:focus {
+
+  #mainNav .navbar-nav>li.nav-item>a.nav-link,
+  #mainNav .navbar-nav>li.nav-item>a.nav-link:focus {
     color: rgba(255, 255, 255, 1);
   }
-  #mainNav .navbar-nav > li.nav-item > a.nav-link:hover,
-  #mainNav .navbar-nav > li.nav-item > a.nav-link:focus:hover {
+
+  #mainNav .navbar-nav>li.nav-item>a.nav-link:hover,
+  #mainNav .navbar-nav>li.nav-item>a.nav-link:focus:hover {
     color: #fff;
   }
+
   #mainNav.navbar-shrink {
     border-bottom: 1px solid rgba(33, 37, 41, 0.1);
     background-color: #fff;
   }
+
   #mainNav.navbar-shrink .navbar-brand {
     color: #f1725e;
   }
-  #mainNav.navbar-shrink .navbar-brand:focus, #mainNav.navbar-shrink .navbar-brand:hover {
+
+  #mainNav.navbar-shrink .navbar-brand:focus,
+  #mainNav.navbar-shrink .navbar-brand:hover {
     color: #f1725e;
   }
-  #mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link,
-  #mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link:focus {
+
+  #mainNav.navbar-shrink .navbar-nav>li.nav-item>a.nav-link,
+  #mainNav.navbar-shrink .navbar-nav>li.nav-item>a.nav-link:focus {
     color: #212529;
   }
-  #mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link:hover,
-  #mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link:focus:hover {
+
+  #mainNav.navbar-shrink .navbar-nav>li.nav-item>a.nav-link:hover,
+  #mainNav.navbar-shrink .navbar-nav>li.nav-item>a.nav-link:focus:hover {
     color: #f1725e;
   }
-  
+
   #mainNav .navbar-nav>li.nav-item>a .fa-nav-icon {
     font-size: 1.2rem;
     color: white;
@@ -302,7 +324,7 @@ header.masthead {
   padding-top: 10rem;
   padding-bottom: calc(10rem - 56px);
   /*background-image: url("");*/
-  background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url('../img/AberturaNavi.png');
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../img/AberturaNavi.png');
   background-position: center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -336,6 +358,7 @@ header.masthead p {
     padding-top: 0;
     padding-bottom: 0;
   }
+
   header.masthead h1 {
     font-size: 3rem;
   }
@@ -348,16 +371,16 @@ header.masthead p {
 }
 
 @media (max-width: 800px) {
-    header.masthead {
-		padding-top: 10rem;
-		padding-bottom: calc(10rem - 56px);
-        background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url('../img/FundoCel2.png');
-		 background-position: center center;
-		-webkit-background-size: cover;
-		-moz-background-size: cover;
-		-o-background-size: cover;
-		background-size: cover;
-    }
+  header.masthead {
+    padding-top: 10rem;
+    padding-bottom: calc(10rem - 56px);
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../img/FundoCel2.png');
+    background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
 }
 
 .service-box {
@@ -422,6 +445,7 @@ header.masthead p {
   .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category {
     font-size: 20px;
   }
+
   .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
     font-size: 22px;
   }
@@ -434,7 +458,6 @@ header.masthead p {
 .btn {
   font-weight: 700;
   text-transform: uppercase;
-  border: none;
   border-radius: 300px;
   font-family: AmpleSoft-Light;
 }
@@ -448,20 +471,42 @@ header.masthead p {
   border-color: #f1725e;
 }
 
-.btn-primary:hover, .btn-primary:focus, .btn-primary:active {
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active {
   color: #fff;
   background-color: #ee4b28 !important;
+  border-color: #ee4b28 !important;
 }
 
-.btn-primary:active, .btn-primary:focus {
+.btn-primary:active,
+.btn-primary:focus {
   box-shadow: 0 0 0 0.2rem rgba(240, 95, 64, 0.5) !important;
 }
 
+.btn-outline-primary {
+  color: #ee4b28;
+  border-color: transparent !important;
+}
+
+.btn-outline-primary:active,
+.btn-outline-primary:focus,
+.btn-outline-primary:hover {
+  color: #fff;
+  background-color: #f1725e !important;
+  border-color: #f1725e !important;
+}
+
+.btn-outline-primary:active,
+.btn-outline-primary:focus {
+  box-shadow: 0 0 0 0.2rem rgba(240, 95, 64, 0.5) !important;
+}
 
 /* Customizações */
 .graph-table {
   font-size: 14px;
 }
+
 .graph-text {
   font-size: 11px;
 }
@@ -470,16 +515,21 @@ header.masthead p {
   font-size: 20px;
 }
 
-.text-Team{
+.text-Team {
   font-size: 20px;
 }
 
-@media (min-width: 992px){ .modal-lg { max-width: 1000px; } }
+@media (min-width: 992px) {
+  .modal-lg {
+    max-width: 1000px;
+  }
+}
 
 .portfolio-box-caption {
   opacity: 1 !important;
   background: rgba(0, 0, 0, 0.4) !important;
 }
+
 .portfolio-box-caption:hover {
   background: rgba(240, 95, 64, 0.9) !important;
 }
@@ -540,4 +590,19 @@ img {
 .collapsed .collapse-hr,
 .collapse-arrow {
   display: none;
+}
+
+.partners {
+  width: 13.5em;
+  display: block;
+}
+
+.center-partners {
+  margin-left: 3em;
+  margin-right: 3em
+}
+
+.modal-subtitle {
+  font-family: KyrialSansProLight;
+  margin-bottom: 0.8em;
 }
