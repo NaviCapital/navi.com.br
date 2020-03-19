@@ -38,5 +38,8 @@
         "company": "Company",
         "send": "Send",
         "language": "english"
+    },
+    "partners": {
+        "title": "Partners"
     }
 }
