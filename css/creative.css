@@ -606,3 +606,21 @@ img {
   font-family: KyrialSansProLight;
   margin-bottom: 0.8em;
 }
+
+.desktop-partners {
+  display: none;
+}
+
+.mobile-partners {
+  display: flex;
+}
+
+@media (min-width: 992px) {
+  .desktop-partners {
+    display: flex;
+  }
+
+  .mobile-partners {
+    display: none;
+  }
+}

@@ -38,5 +38,8 @@
         "company": "Empresa",
         "send": "Enviar",
         "language": "portuguese"
+    },
+    "partners": {
+        "title": "Sócios"
     }
 }
