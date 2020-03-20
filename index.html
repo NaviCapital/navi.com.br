@@ -724,7 +724,7 @@
       var button = $(event.relatedTarget) // Button that triggered the modal
       var partner = button.data('partner') // Extract info from data-partner attributes
       var modal = $(this)
-      var partners = language=='en' ? partners_en:partners_pt
+      var partners = language == 'en' ? partners_en : partners_pt
       modal.find('.modal-title').text(partners[partner].title)
       modal.find('.modal-subtitle').text(partners[partner].subtitle)
       modal.find('.modal-text').text(partners[partner].body)
@@ -781,93 +781,61 @@
               <tbody>
                 <tr>
                   <td>Fundo</td>
-                  <td>205,10% </td>
-                  <td>41,38% </td>
-                  <td>25,72% </td>
-                  <td>9,45% </td>
-                  <td>R$ 909M</td>
+                  <td>201,97% </td>
+                  <td>33,43% </td>
+                  <td>19,98% </td>
+                  <td>5,62% </td>
+                  <td>R$ 851M</td>
                 </tr>
                 <tr>
                   <td>CDI</td>
-                  <td>137,86% </td>
-                  <td>23,99% </td>
-                  <td>12,77% </td>
-                  <td>5,96% </td>
+                  <td>139,46% </td>
+                  <td>22,42% </td>
+                  <td>12,34% </td>
+                  <td>5,57% </td>
                   <td>-</td>
                 </tr>
               </tbody>
             </table>
           </div>
-          <div class="modal-body graph-text">
-            <div class="table-responsive">
-              <table class="table graph-table table-bordered">
-                <thead>
-                  <tr>
-                    <th>Rentabilidade</th>
-					<th>Desde o início</th>
-					<th>36 meses</th>
-					<th>24 meses</th>
-                    <th>12 meses</th>
-                    <th>PL</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>Fundo</td>
-                    <td>201,97%	</td>
-                    <td>33,43%	</td>
-                    <td>19,98%	</td>
-                    <td>5,62%	</td>
-                    <td>R$ 851M</td>
-                  </tr>
-                  <tr>
-                    <td>CDI</td>
-                    <td>139,46%	</td>
-                    <td>22,42%	</td>
-                    <td>12,34%	</td>
-                    <td>5,57%	</td>
-                    <td>-</td>
-                  </tr>
-                </tbody>
-              </table>
+          <div class="row">
+            <div class="col-lg-8">
+              <img src="img/graficos/graficoLS.png" alt="" class="">
+              <p>Dados de 28/02/2020 e início do fundo em 29/09/2010.</p>
             </div>
-            <div class="row">
-              <div class="col-lg-8">
-                <img src="img/graficos/graficoLS.png" alt="" class="">
-                <p>Dados de 28/02/2020 e início do fundo em 29/09/2010.</p>
-              </div>
-              <div class="col-lg-4">
-                <p>
-                  <strong>Público Alvo:</strong> Investidores em geral. <br>
-                  <strong>Aplicação (Cotização):</strong> D+0. <br>
-                  <strong>Resgate (Cotização): </strong>D+30 (corridos). <br>
-                  <strong>Resgate (Pagamento): </strong>2º dia útil após cotização. <br>
-                  <strong>Aplicação Inicial:</strong> R$ 50.000,00 <br>
-				  <strong>Aplicação Inicial (conta e ordem):</strong> R$ 5.000,00 <br>
-                  <strong>Movimentação Mínima:</strong> R$ 10.000,00 <br>
-				  <strong>Horário de Solicitação de Movimentação:</strong>Até 15h. <br>
-                  <strong>Taxa de Administração:</strong> 2% a.a. (pago mensalmente)<br>
-                  <strong>Taxa de Performance:</strong> 20% do que exceder 100% do CDI, com high water mark. (pago semestralmente) <br>
-                  <strong>Administração:</strong> BEM DTVM <br>
-                  <strong>Custódia:</strong> Banco Bradesco <br>
-                  <strong>Auditoria:</strong> KPMG. <br>
-                  <strong>Categoria ANBIMA:</strong> Long and Short - Direcional <br>
-                  <strong>Tributação:</strong> O fundo perseguirá o tratamento tributário de longo prazo. IR Fonte decrescente.<br>
-				  <strong>Status:</strong> Fechado para captação.<br>
-                </p>
+            <div class="col-lg-4">
+              <p>
+                <strong>Público Alvo:</strong> Investidores em geral. <br>
+                <strong>Aplicação (Cotização):</strong> D+0. <br>
+                <strong>Resgate (Cotização): </strong>D+30 (corridos). <br>
+                <strong>Resgate (Pagamento): </strong>2º dia útil após cotização. <br>
+                <strong>Aplicação Inicial:</strong> R$ 50.000,00 <br>
+                <strong>Aplicação Inicial (conta e ordem):</strong> R$ 5.000,00 <br>
+                <strong>Movimentação Mínima:</strong> R$ 10.000,00 <br>
+                <strong>Horário de Solicitação de Movimentação:</strong>Até 15h. <br>
+                <strong>Taxa de Administração:</strong> 2% a.a. (pago mensalmente)<br>
+                <strong>Taxa de Performance:</strong> 20% do que exceder 100% do CDI, com high water mark. (pago
+                semestralmente) <br>
+                <strong>Administração:</strong> BEM DTVM <br>
+                <strong>Custódia:</strong> Banco Bradesco <br>
+                <strong>Auditoria:</strong> KPMG. <br>
+                <strong>Categoria ANBIMA:</strong> Long and Short - Direcional <br>
+                <strong>Tributação:</strong> O fundo perseguirá o tratamento tributário de longo prazo. IR Fonte
+                decrescente.<br>
+                <strong>Status:</strong> Fechado para captação.<br>
+              </p>
 
-                <a class="btn btn-light sr-button" href="files/Relatorio_LS.pdf" target="_blank">Relatório
-                  <i class="fas fa-file-pdf small text-muted"></i>
-                  <i class="fas fa-external-link-alt small text-muted"></i>
-                </a>
-                <br>
-                <br>
+              <a class="btn btn-light sr-button" href="files/Relatorio_LS.pdf" target="_blank">Relatório
+                <i class="fas fa-file-pdf small text-muted"></i>
+                <i class="fas fa-external-link-alt small text-muted"></i>
+              </a>
+              <br>
+              <br>
 
-                <a class="btn btn-light sr-button" href="files/Regulamento_LS.pdf" target="_blank">Regulamento
-                  <i class="fas fa-file-pdf small text-muted"></i>
-                  <i class="fas fa-external-link-alt small text-muted"></i>
-                </a>
-              </div>
+              <a class="btn btn-light sr-button" href="files/Regulamento_LS.pdf" target="_blank">Regulamento
+                <i class="fas fa-file-pdf small text-muted"></i>
+                <i class="fas fa-external-link-alt small text-muted"></i>
+              </a>
             </div>
           </div>
         </div>
@@ -901,18 +869,18 @@
               <tbody>
                 <tr>
                   <td>Fundo</td>
-                  <td>113,52%</td>
-                  <td>112,08%</td>
-                  <td>72,60%</td>
-                  <td>29,84%</td>
-                  <td>R$ 893M</td>
+                  <td>99,20%</td>
+                  <td>76,38%</td>
+                  <td>44,08%</td>
+                  <td>12,06%</td>
+                  <td>R$ 930M</td>
                 </tr>
                 <tr>
                   <td>IMA-B</td>
-                  <td>58,39%</td>
-                  <td>56,79%</td>
-                  <td>39,01%</td>
-                  <td>22,95%</td>
+                  <td>59,52%</td>
+                  <td>49,27%</td>
+                  <td>34,65%</td>
+                  <td>18,00%</td>
                   <td>-</td>
                 </tr>
               </tbody>
@@ -921,79 +889,41 @@
           <div class="row">
             <div class="col-lg-8">
               <img src="img/graficos/graficoLB.png" alt="" class="">
-              <p>Dados de 31/12/2019 e início do fundo em 27/12/2016.</p>
+              <p>Dados de 28/02/2020 e início do fundo em 27/12/2016.</p>
             </div>
-            <div class="modal-body graph-text">
-              <div class="table-responsive">
-                <table class="table graph-table table-bordered">
-                  <thead>
-                    <tr>
-                      <th>Rentabilidade</th>
-                      <th>Desde o início</th>
-                      <th>36 meses</th>
-                      <th>24 meses</th>
-                      <th>12 meses</th>
-                      <th>PL</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>Fundo</td>
-                      <td>99,20%</td>
-                      <td>76,38%</td>
-                      <td>44,08%</td>
-                      <td>12,06%</td>
-                      <td>R$ 930M</td>
-                    </tr>
-                    <tr>
-                      <td>IMA-B</td>
-                      <td>59,52%</td>
-                      <td>49,27%</td>
-                      <td>34,65%</td>
-                      <td>18,00%</td>
-                      <td>-</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-              <div class="row">
-                <div class="col-lg-8">
-                  <img src="img/graficos/graficoLB.png" alt="" class="">
-                  <p>Dados de 28/02/2020 e início do fundo em 27/12/2016.</p>
-                </div>
-                <div class="col-lg-4">
-                  <p>
-                    <strong>Público Alvo:</strong> Investidores Qualificados. <br>
-                    <strong>Aplicação (Cotização):</strong> D+0. <br>
-                    <strong>Resgate (Cotização): </strong>D+60 (corridos). <br>
-                    <strong>Resgate (Pagamento): </strong>2º dia útil após cotização. <br>
-                    <strong>Aplicação Inicial:</strong> R$ 50.000,00 <br>
-					<strong>Aplicação Inicial (conta e ordem):</strong> R$ 5.000,00 <br>
-                    <strong>Movimentação Mínima:</strong> R$ 10.000,00 <br>
-					<strong>Horário de Solicitação de Movimentação:</strong>Até 14:30h. <br>
-                    <strong>Taxa de Administração:</strong> 2% a.a. (pago mensalmente)<br>
-                    <strong>Taxa de Performance:</strong> 20% do que exceder 100% do IMA-B, com high water mark. (pago semestralmente) <br>
-                    <strong>Administração:</strong> BEM DTVM <br>
-                    <strong>Custódia:</strong> Banco Bradesco <br>
-                    <strong>Auditoria:</strong> KPMG. <br>
-                    <strong>Categoria ANBIMA:</strong> Multimercado Livre <br>
-                    <strong>Tributação:</strong> O fundo perseguirá o tratamento tributário dos fundos de renda variável.<br>
-					<strong>Status:</strong> Aberto para captação.<br>
-                  </p>
+            <div class="col-lg-4">
+              <p>
+                <strong>Público Alvo:</strong> Investidores Qualificados. <br>
+                <strong>Aplicação (Cotização):</strong> D+0. <br>
+                <strong>Resgate (Cotização): </strong>D+60 (corridos). <br>
+                <strong>Resgate (Pagamento): </strong>2º dia útil após cotização. <br>
+                <strong>Aplicação Inicial:</strong> R$ 50.000,00 <br>
+                <strong>Aplicação Inicial (conta e ordem):</strong> R$ 5.000,00 <br>
+                <strong>Movimentação Mínima:</strong> R$ 10.000,00 <br>
+                <strong>Horário de Solicitação de Movimentação:</strong>Até 14:30h. <br>
+                <strong>Taxa de Administração:</strong> 2% a.a. (pago mensalmente)<br>
+                <strong>Taxa de Performance:</strong> 20% do que exceder 100% do IMA-B, com high water mark. (pago
+                semestralmente) <br>
+                <strong>Administração:</strong> BEM DTVM <br>
+                <strong>Custódia:</strong> Banco Bradesco <br>
+                <strong>Auditoria:</strong> KPMG. <br>
+                <strong>Categoria ANBIMA:</strong> Multimercado Livre <br>
+                <strong>Tributação:</strong> O fundo perseguirá o tratamento tributário dos fundos de renda
+                variável.<br>
+                <strong>Status:</strong> Aberto para captação.<br>
+              </p>
 
-                  <a class="btn btn-light sr-button" href="files/Relatorio_LB.pdf" target="_blank">Relatório
-                    <i class="fas fa-file-pdf small text-muted"></i>
-                    <i class="fas fa-external-link-alt small text-muted"></i>
-                  </a>
-                  <br>
-                  <br>
+              <a class="btn btn-light sr-button" href="files/Relatorio_LB.pdf" target="_blank">Relatório
+                <i class="fas fa-file-pdf small text-muted"></i>
+                <i class="fas fa-external-link-alt small text-muted"></i>
+              </a>
+              <br>
+              <br>
 
-                  <a class="btn btn-light sr-button" href="files/Regulamento_LB.pdf" target="_blank">Regulamento
-                    <i class="fas fa-file-pdf small text-muted"></i>
-                    <i class="fas fa-external-link-alt small text-muted"></i>
-                  </a>
-                </div>
-              </div>
+              <a class="btn btn-light sr-button" href="files/Regulamento_LB.pdf" target="_blank">Regulamento
+                <i class="fas fa-file-pdf small text-muted"></i>
+                <i class="fas fa-external-link-alt small text-muted"></i>
+              </a>
             </div>
           </div>
         </div>
@@ -1028,18 +958,18 @@
               <tbody>
                 <tr>
                   <td>Fundo</td>
-                  <td>39,45%</td>
+                  <td>38,15%</td>
                   <td>-</td>
-                  <td>31,61%</td>
-                  <td>12,52%</td>
-                  <td>R$ 95M</td>
+                  <td>25,77%</td>
+                  <td>8,11%</td>
+                  <td>R$ 90M</td>
                 </tr>
                 <tr>
                   <td>CDI</td>
-                  <td>18,75%</td>
+                  <td>19,54%</td>
                   <td>-</td>
-                  <td>12,77%</td>
-                  <td>5,96%</td>
+                  <td>12,34%</td>
+                  <td>5,57%</td>
                   <td>-</td>
                 </tr>
               </tbody>
@@ -1048,76 +978,36 @@
           <div class="row">
             <div class="col-lg-8">
               <img src="img/graficos/graficoPrev.png" alt="" class="">
-              <p>Dados de 31/12/2019 e início do fundo em 18/05/2017.</p>
+              <p>Dados de 28/02/2020 e início do fundo em 18/05/2017.</p>
             </div>
-            <div class="modal-body graph-text">
-              <div class="table-responsive">
-                <table class="table graph-table table-bordered">
-                  <thead>
-                    <tr>
-                      <th>Rentabilidade</th>
-                      <th>Desde o início</th>
-                      <th>36 meses</th>
-                      <th>24 meses</th>
-                      <th>12 meses</th>
-                      <th>PL</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>Fundo</td>
-                      <td>38,15%</td>
-                      <td>-</td>
-                      <td>25,77%</td>
-                      <td>8,11%</td>
-                      <td>R$ 90M</td>
-                    </tr>
-                    <tr>
-                      <td>CDI</td>
-                      <td>19,54%</td>
-                      <td>-</td>
-                      <td>12,34%</td>
-                      <td>5,57%</td>
-                      <td>-</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-              <div class="row">
-                <div class="col-lg-8">
-                  <img src="img/graficos/graficoPrev.png" alt="" class="">
-                  <p>Dados de 28/02/2020 e início do fundo em 18/05/2017.</p>
-                </div>
-                <div class="col-lg-4">
-                  <p>
-                    <strong>Movimentações:</strong> Consultar a Seguradora. <br>
-                    <strong>Resgate (Cotização): </strong>D+1 (útil). <br>
-                    <strong>Resgate (Pagamento): </strong>2º dia útil após cotização. <br>
-                    <strong>Aplicação Inicial:</strong> Não há <br>
-                    <strong>Movimentação Mínima:</strong> Não há <br>
-                    <strong>Taxa de Administração:</strong> 2% a.a. (pago mensalmente)<br>
-                    <strong>Taxa de Performance:</strong> Não há <br>
-                    <strong>Seguradora:</strong> Icatu <br>
-                    <strong>Administração:</strong> BEM DTVM <br>                    
-                    <strong>Custódia:</strong> Banco Bradesco <br>
-                    <strong>Auditoria:</strong> PriceWaterhouseCooper. <br>
-                    <strong>Categoria ANBIMA:</strong> Previdencia Multimercados <br>
-					<strong>Status:</strong> Fechado para novos clientes.<br>
-                  </p>
+            <div class="col-lg-4">
+              <p>
+                <strong>Movimentações:</strong> Consultar a Seguradora. <br>
+                <strong>Resgate (Cotização): </strong>D+1 (útil). <br>
+                <strong>Resgate (Pagamento): </strong>2º dia útil após cotização. <br>
+                <strong>Aplicação Inicial:</strong> Não há <br>
+                <strong>Movimentação Mínima:</strong> Não há <br>
+                <strong>Taxa de Administração:</strong> 2% a.a. (pago mensalmente)<br>
+                <strong>Taxa de Performance:</strong> Não há <br>
+                <strong>Seguradora:</strong> Icatu <br>
+                <strong>Administração:</strong> BEM DTVM <br>
+                <strong>Custódia:</strong> Banco Bradesco <br>
+                <strong>Auditoria:</strong> PriceWaterhouseCooper. <br>
+                <strong>Categoria ANBIMA:</strong> Previdencia Multimercados <br>
+                <strong>Status:</strong> Fechado para novos clientes.<br>
+              </p>
 
-                  <a class="btn btn-light sr-button" href="files/Relatorio_Prev.pdf" target="_blank">Relatório
-                    <i class="fas fa-file-pdf small text-muted"></i>
-                    <i class="fas fa-external-link-alt small text-muted"></i>
-                  </a>
-                  <br>
-                  <br>
+              <a class="btn btn-light sr-button" href="files/Relatorio_Prev.pdf" target="_blank">Relatório
+                <i class="fas fa-file-pdf small text-muted"></i>
+                <i class="fas fa-external-link-alt small text-muted"></i>
+              </a>
+              <br>
+              <br>
 
-                  <a class="btn btn-light sr-button" href="files/Regulamento_Prev.pdf" target="_blank">Regulamento
-                    <i class="fas fa-file-pdf small text-muted"></i>
-                    <i class="fas fa-external-link-alt small text-muted"></i>
-                  </a>
-                </div>
-              </div>
+              <a class="btn btn-light sr-button" href="files/Regulamento_Prev.pdf" target="_blank">Regulamento
+                <i class="fas fa-file-pdf small text-muted"></i>
+                <i class="fas fa-external-link-alt small text-muted"></i>
+              </a>
             </div>
           </div>
         </div>
@@ -1151,18 +1041,18 @@
               <tbody>
                 <tr>
                   <td>Fundo</td>
-                  <td>261,55%</td>
-                  <td>139,93%</td>
-                  <td>89,46%</td>
-                  <td>41,32%</td>
-                  <td>R$ 1.214M</td>
+                  <td>234,41%</td>
+                  <td>92,47%</td>
+                  <td>49,89%</td>
+                  <td>17,00%</td>
+                  <td>R$ 1.104M</td>
                 </tr>
                 <tr>
                   <td>Ibovespa</td>
-                  <td>166,77%</td>
-                  <td>92,01%</td>
-                  <td>51,36%</td>
-                  <td>31,58%</td>
+                  <td>143,43%</td>
+                  <td>56,27%</td>
+                  <td>22,05%</td>
+                  <td>8,98%</td>
                   <td>-</td>
                 </tr>
               </tbody>
@@ -1171,79 +1061,43 @@
           <div class="row">
             <div class="col-lg-8">
               <img src="img/graficos/graficoLO.png" alt="" class="">
-              <p>Dados de 31/12/2019 e início do fundo em 30/09/2011.</p>
+              <p>Dados de 28/02/2020 e início do fundo em 30/09/2011.</p>
             </div>
-            <div class="modal-body graph-text">
-              <div class="table-responsive">
-                <table class="table graph-table table-bordered">
-                  <thead>
-                    <tr>
-                      <th>Rentabilidade</th>
-                      <th>48 meses</th>
-                      <th>36 meses</th>
-                      <th>24 meses</th>
-					  <th>12 meses</th>
-                      <th>PL</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>Fundo</td>
-                      <td>234,41%</td>
-                      <td>92,47%</td>
-                      <td>49,89%</td>
-					  <td>17,00%</td>
-                      <td>R$ 1.104M</td>
-                    </tr>
-                    <tr>
-                      <td>Ibovespa</td>
-                      <td>143,43%</td>
-					  <td>56,27%</td>
-                      <td>22,05%</td>
-					  <td>8,98%</td>
-                      <td>-</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-              <div class="row">
-                <div class="col-lg-8">
-                  <img src="img/graficos/graficoLO.png" alt="" class="">
-                  <p>Dados de 28/02/2020 e início do fundo em 30/09/2011.</p>
-                </div>
-                <div class="col-lg-4">
-                  <p>
-                    <strong>Público Alvo:</strong> Investidores em geral, inclusive companhias seguradoras, sociedades de capitalização, entidades abertas e fechadas de previdência complementar e regimes próprios de previdência social.<br>
-                    <strong>Aplicação (Cotização):</strong> D+1 (úteis). <br>
-                    <strong>Resgate (Cotização): </strong>D+30 (corridos). <br>
-                    <strong>Resgate (Pagamento): </strong>2º dia útil após cotização. <br>
-                    <strong>Aplicação Inicial:</strong> R$ 10.000,00 <br>
-					<strong>Aplicação Inicial (conta e ordem):</strong> R$ 5.000,00 <br>
-                    <strong>Movimentação Mínima:</strong> R$ 5.000,00 <br>
-					<strong>Horário de Solicitação de Movimentação:</strong>Até 15h. <br>
-                    <strong>Taxa de Administração:</strong> 1,5% a.a. (pago mensalmente)<br>
-                    <strong>Taxa de Performance:</strong> 20% do que exceder 100% do índice BOVESPA, com high water mark. (pago semestralmente) <br>
-                    <strong>Administração:</strong> BEM DTVM <br>
-                    <strong>Custódia:</strong> Banco Bradesco <br>
-                    <strong>Auditoria:</strong> KPMG. <br>
-                    <strong>Categoria ANBIMA:</strong> Ações Livre <br>
-                    <strong>Tributação:</strong> IR de 15% sobre o rendimento nominal.<br>
-					<strong>Status:</strong> Fechado para captação.<br>
-                  </p>
+            <div class="col-lg-4">
+              <p>
+                <strong>Público Alvo:</strong> Investidores em geral, inclusive companhias seguradoras, sociedades de
+                capitalização, entidades abertas e fechadas de previdência complementar e regimes próprios de
+                previdência
+                social.<br>
+                <strong>Aplicação (Cotização):</strong> D+1 (úteis). <br>
+                <strong>Resgate (Cotização): </strong>D+30 (corridos). <br>
+                <strong>Resgate (Pagamento): </strong>2º dia útil após cotização. <br>
+                <strong>Aplicação Inicial:</strong> R$ 10.000,00 <br>
+                <strong>Aplicação Inicial (conta e ordem):</strong> R$ 5.000,00 <br>
+                <strong>Movimentação Mínima:</strong> R$ 5.000,00 <br>
+                <strong>Horário de Solicitação de Movimentação:</strong>Até 15h. <br>
+                <strong>Taxa de Administração:</strong> 1,5% a.a. (pago mensalmente)<br>
+                <strong>Taxa de Performance:</strong> 20% do que exceder 100% do índice BOVESPA, com high water mark.
+                (pago semestralmente) <br>
+                <strong>Administração:</strong> BEM DTVM <br>
+                <strong>Custódia:</strong> Banco Bradesco <br>
+                <strong>Auditoria:</strong> KPMG. <br>
+                <strong>Categoria ANBIMA:</strong> Ações Livre <br>
+                <strong>Tributação:</strong> IR de 15% sobre o rendimento nominal.<br>
+                <strong>Status:</strong> Fechado para captação.<br>
+              </p>
 
-                  <a class="btn btn-light sr-button" href="files/Relatorio_LO.pdf" target="_blank">Relatório
-                    <i class="fas fa-file-pdf small text-muted"></i>
-                    <i class="fas fa-external-link-alt small text-muted"></i>
-                  </a>
-                  <br>
-                  <br>
+              <a class="btn btn-light sr-button" href="files/Relatorio_LO.pdf" target="_blank">Relatório
+                <i class="fas fa-file-pdf small text-muted"></i>
+                <i class="fas fa-external-link-alt small text-muted"></i>
+              </a>
+              <br>
+              <br>
 
-                  <a class="btn btn-light sr-button" href="files/Regulamento_LO.pdf" target="_blank">Regulamento
-                    <i class="fas fa-file-pdf small text-muted"></i>
-                    <i class="fas fa-external-link-alt small text-muted"></i>
-                  </a>
-                </div>
-              </div>
+              <a class="btn btn-light sr-button" href="files/Regulamento_LO.pdf" target="_blank">Regulamento
+                <i class="fas fa-file-pdf small text-muted"></i>
+                <i class="fas fa-external-link-alt small text-muted"></i>
+              </a>
             </div>
           </div>
         </div>
