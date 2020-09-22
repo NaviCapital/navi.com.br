@@ -109,7 +109,7 @@
           </li>
           <li class="nav-item" style="display: inline-flex;">
             <a class="nav-link" style="padding-right: 0.3rem;"
-              onclick='$("[data-localize]").localize("navi", { language: "pt" }); $(".pt-only").show(); language="pt";'
+              onclick='$("[data-localize]").localize("navi", { language: "pt" }); $(".pt-only").show(); language="pt"; $("#aberturafundo").modal("show");'
               href="javascript:void(0);">PT</a>
             <a class="nav-link" style="padding-right: 0;padding-left: 0;">|</a>
             <a class="nav-link" style="padding-left: 0.3rem;"
@@ -739,8 +739,40 @@
       } else {
         $('video').attr('autoplay');
       }
+      if (language == "pt"){
+        $("#aberturafundo").modal("show");
+      }
     });
   </script>
+
+  <!-- Modal Abertura Fundo -->
+  <div class="modal fade text-center" id="aberturafundo" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header" style="margin:0 auto;">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="position: absolute;right: 25px;">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <h5 class="modal-title"><img src="img/logo_salmao_pequeno.png" style="height: 35px;" /></h5>
+        </div>
+        <div class="modal-body", style="font-size: 25px;margin: 10px;">
+          O fundo <b>Navi Long Biased FIC FIM</b> já está aberto para novas aplicações.
+          <br>
+          <br>
+          Investimentos podem ser feitos até o dia <b>02/10/2020</b>, inclusive.
+          <br>
+          <br>
+          <div style="width: 200px;margin:0 auto;">
+            <a class="btn btn-outline-primary btn-block" href="http://navi.rds.land/navi-long-biased-reabertura" style="font-size: 25px;">
+              <b>Saiba mais</b>
+            </a>
+          </div>
+          <br>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- Modal Partner -->
   <div class="modal fade" id="modalPartner" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
