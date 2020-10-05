@@ -109,7 +109,7 @@
           </li>
           <li class="nav-item" style="display: inline-flex;">
             <a class="nav-link" style="padding-right: 0.3rem;"
-              onclick='$("[data-localize]").localize("navi", { language: "pt" }); $(".pt-only").show(); language="pt"; $("#aberturafundo").modal("show");'
+              onclick='$("[data-localize]").localize("navi", { language: "pt" }); $(".pt-only").show(); language="pt";'
               href="javascript:void(0);">PT</a>
             <a class="nav-link" style="padding-right: 0;padding-left: 0;">|</a>
             <a class="nav-link" style="padding-left: 0.3rem;"
@@ -739,13 +739,13 @@
       } else {
         $('video').attr('autoplay');
       }
-      if (language == "pt"){
-        $("#aberturafundo").modal("show");
-      }
+//       if (language == "pt"){
+//         $("#aberturafundo").modal("show");
+//       }
     });
   </script>
 
-  <!-- Modal Abertura Fundo -->
+<!--   <!-- Modal Abertura Fundo -->
   <div class="modal fade text-center" id="aberturafundo" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
     aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
@@ -773,7 +773,7 @@
       </div>
     </div>
   </div>
-
+ -->
   <!-- Modal Partner -->
   <div class="modal fade" id="modalPartner" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
     aria-hidden="true">
